@@ -25,24 +25,13 @@ function Navbar() {
         <NavLink
           to='/'
           className={({ isActive }) =>
-            isActive
-              ? myBody.clientWidth >= 1024
-                ? 'text-gray-400'
-                : 'text-gray-400 pr-2'
-              : 'link'
+            isActive ? 'text-gray-400 pr-2' : 'link pr-2'
           }
         >
           Projects
         </NavLink>
         <a
           href='https://docs.google.com/document/d/1cCmYlvT7zN1VVJ4X7mH-5sxntNe4PvYZ5K1fgKZWyMg/edit'
-          className={({ isActive }) =>
-            isActive
-              ? myBody.clientWidth >= 1024
-                ? 'text-gray-400'
-                : 'text-gray-400 pr-2'
-              : 'link'
-          }
           target='_blank'
           rel='noreferrer'
         >
@@ -52,11 +41,7 @@ function Navbar() {
         <NavLink
           to='/about'
           className={({ isActive }) =>
-            isActive
-              ? myBody.clientWidth >= 1024
-                ? 'text-gray-400'
-                : 'text-gray-400 pl-2'
-              : 'link'
+            isActive ? 'text-gray-400 pl-2 lg:pl-0' : 'link pl-2 lg:pl-0'
           }
         >
           About
