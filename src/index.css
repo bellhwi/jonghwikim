@@ -58,6 +58,10 @@ footer a:hover {
   color: #5a5a5a;
 }
 
+.profile-img {
+  max-width: 500px;
+}
+
 .profile-img img {
   position: relative;
   filter: grayscale(100%);
