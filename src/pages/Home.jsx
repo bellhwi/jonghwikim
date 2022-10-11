@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import Navbar from '../components/Navbar'
 import MainGrid from '../components/MainGrid'
@@ -19,6 +19,10 @@ function Home() {
       }
     })
   }
+
+  useEffect(() => {
+    document.title = 'jonghwi kim'
+  }, [])
 
   return (
     <div className='myContainer relative h-screen'>

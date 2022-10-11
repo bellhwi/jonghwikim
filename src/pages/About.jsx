@@ -1,9 +1,14 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { useSelector } from 'react-redux'
+import { useEffect } from 'react'
 
 function About() {
   const maxWidth = useSelector((state) => state.maxWidth)
+
+  useEffect(() => {
+    document.title = 'About - jonghwi kim'
+  }, [])
 
   return (
     <>
