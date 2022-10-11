@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+a {
+  display: inline-block;
+}
+
 .link {
   text-decoration: none;
 }

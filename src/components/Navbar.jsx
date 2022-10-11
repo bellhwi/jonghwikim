@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import Footer from './Footer'
 import { setMaxWidth } from '../store'
 import { useDispatch, useSelector } from 'react-redux'
@@ -34,6 +34,20 @@ function Navbar() {
         >
           Projects
         </NavLink>
+        <a
+          href='https://docs.google.com/document/d/1cCmYlvT7zN1VVJ4X7mH-5sxntNe4PvYZ5K1fgKZWyMg/edit'
+          className={({ isActive }) =>
+            isActive
+              ? myBody.clientWidth >= 1024
+                ? 'text-gray-400'
+                : 'text-gray-400 pr-2'
+              : 'link'
+          }
+          target='_blank'
+          rel='noreferrer'
+        >
+          Docs
+        </a>
 
         <NavLink
           to='/about'
