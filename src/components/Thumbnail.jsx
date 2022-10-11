@@ -1,5 +1,5 @@
 import { setId } from '../store'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 function Thumbnail({ url, title, setModalOn, id }) {
   const dispatch = useDispatch()

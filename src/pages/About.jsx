@@ -8,8 +8,8 @@ function About() {
   return (
     <>
       <Navbar />
-      <div className='profile w-10/12 lg:w-9/12 pt-16 mx-auto relative'>
-        <div className='profile-info pr-12'>
+      <div className='profile flex justify-center align-center flex-col-reverse lg:flex-row w-10/12 lg:w-9/12 lg:pt-16 pt-10 mx-auto relative'>
+        <div className='profile-info lg:pr-12 lg:w-1/2 pt-8 lg:pt-0'>
           <h2>Hi, I'm Jonghwi, aka Johnny from my people.</h2>
           <br></br>
           <p>
@@ -44,7 +44,7 @@ function About() {
             View My Resume
           </a>
         </div>
-        <div className='profile-img'>
+        <div className='profile-img w-1/2 mx-auto'>
           <img src={require('../images/jonghwikim.webp')} />
         </div>
       </div>

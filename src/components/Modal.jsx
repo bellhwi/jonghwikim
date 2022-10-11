@@ -1,17 +1,17 @@
 function Modal({ url, title, desc, github, website }) {
   return (
     <div className='myModal-container'>
-      <div className='card w-8/12 bg-base-100 shadow-xl myModal'>
+      <div className='card card-compact w-96 bg-base-100 shadow-xl myModal'>
         <figure>
           <img src={url} />
         </figure>
         <div className='card-body'>
-          <h2 className='card-title'>{title}</h2>
-          <p className='pt-2 pb-4 pl-1'>{desc}</p>
+          <h2 className='card-title text-base'>{title}</h2>
+          <p className='pt-1 pb-4 pl-1 text-sm'>{desc}</p>
           <div className='card-actions justify-end'>
             {github ? (
               <a
-                className='btn btn-tertiary'
+                className='btn btn-tertiary text-sm'
                 href={github}
                 target='_blank'
                 rel='noreferrer'
@@ -21,7 +21,7 @@ function Modal({ url, title, desc, github, website }) {
             ) : null}
             {website ? (
               <a
-                className='btn btn-primary'
+                className='btn btn-primary text-sm'
                 href={website}
                 target='_blank'
                 rel='noreferrer'
