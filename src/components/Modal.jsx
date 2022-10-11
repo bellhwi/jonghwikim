@@ -1,7 +1,7 @@
 function Modal({ url, title, desc, github, website }) {
   return (
     <div className='myModal-container'>
-      <div className='card card-compact w-96 bg-base-100 shadow-xl myModal'>
+      <div className='card card-compact bg-base-100 shadow-xl myModal'>
         <figure>
           <img src={url} />
         </figure>
