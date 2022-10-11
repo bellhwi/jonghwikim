@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 
-function Footer({ absolute }) {
+function Footer() {
   return (
     <footer className='lg:fixed lg:bottom-0 lg:mb-12'>
       <div className='flex justify-center lg:justify-start items-center text-gray-400 pb-10 lg:pb-0 pt-8 lg:pt-0'>

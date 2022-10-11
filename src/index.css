@@ -16,12 +16,12 @@ footer a:hover {
   color: #000;
 }
 
-div a img:hover {
-  opacity: 0.7;
-}
-
 .thumbnail {
   cursor: pointer;
+}
+
+.thumbnail img:hover {
+  opacity: 0.7;
 }
 
 .myModal-container {

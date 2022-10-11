@@ -14,7 +14,7 @@ export const { setId } = id.actions
 
 const maxWidth = createSlice({
   name: 'maxWidth',
-  initialState: [],
+  initialState: [document.getElementById('myBody').clientWidth],
   reducers: {
     setMaxWidth(state, action) {
       return action.payload

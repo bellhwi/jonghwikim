@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <Navbar />
-      <div className='profile w-10/12 mt-16 mx-auto relative'>
+      <div className='profile w-10/12 lg:w-9/12 pt-16 mx-auto relative'>
         <div className='profile-info pr-12'>
           <h2>Hi, I'm Jonghwi, aka Johnny from my people.</h2>
           <br></br>
@@ -48,7 +48,7 @@ function About() {
           <img src={require('../images/jonghwikim.webp')} />
         </div>
       </div>
-      {maxWidth >= 1024 ? null : <Footer absolute={true} />}
+      {maxWidth >= 1024 ? null : <Footer />}
     </>
   )
 }

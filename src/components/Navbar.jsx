@@ -13,7 +13,7 @@ function Navbar() {
   })
 
   return (
-    <div className='flex items-end lg:fixed lg:block lg:left-0 lg:mx-8 w-10/12 mx-auto'>
+    <div className='flex items-end mx-auto lg:fixed lg:block lg:left-0 lg:mx-8 w-10/12 '>
       <div className='block lg:mt-12 mt-6 lg:ml-0 text-xl'>
         <NavLink to='/'>
           jonghwi {myBody.clientWidth >= 1024 ? <br /> : null}
