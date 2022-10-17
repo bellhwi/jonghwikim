@@ -45,7 +45,6 @@ footer a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
-  width: 90%;
 }
 
 .profile-info h2 {
