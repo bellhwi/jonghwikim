@@ -17,7 +17,7 @@ function Thumbnail({ url, title, setModalOn, id }) {
       data-id={id}
     >
       <img src={url} />
-      <small className='block p-1'>{title}</small>
+      <small className='block p-2'>{title}</small>
     </div>
   )
 }

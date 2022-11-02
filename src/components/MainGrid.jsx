@@ -18,26 +18,14 @@ function MainGrid({ setModalOn }) {
       <Thumbnail
         setModalOn={setModalOn}
         url={require('../images/todoro.png')}
-        title={'Todo List'}
+        title={'Todoro'}
         id={2}
       />
       <Thumbnail
         setModalOn={setModalOn}
         url={require('../images/arnid.png')}
-        title={"Graphic Designer's Portfolio"}
+        title={'Arnid Xiong'}
         id={3}
-      />
-      <Thumbnail
-        setModalOn={setModalOn}
-        url={require('../images/itea.png')}
-        title={'Redesign iTea'}
-        id={4}
-      />
-      <Thumbnail
-        setModalOn={setModalOn}
-        url={require('../images/neilkim.jpeg')}
-        title={'Neil Kim'}
-        id={5}
       />
     </div>
   )
