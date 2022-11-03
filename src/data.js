@@ -4,7 +4,7 @@ const data = [
     title: 'Haxa',
     desc: 'This is a commercial products website that is outsourced from my client.',
     github: 'https://github.com/bellhwi/haxa',
-    website: 'https://haxa-16f57.web.app/',
+    website: 'https://haxalabs.com/',
   },
   {
     url: require('./images/pokemon-guesser2.webp'),
@@ -25,7 +25,7 @@ const data = [
     title: 'Arnid Xiong',
     desc: 'This is a graphic design portfolio website for one of my clients.',
     github: 'https://github.com/bellhwi/ArnidXiong',
-    website: 'https://arnidxiong.netlify.app/',
+    website: 'https://arnidxiong.co/',
   },
 ]
 
