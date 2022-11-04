@@ -17,14 +17,14 @@ function MainGrid({ setModalOn }) {
       />
       <Thumbnail
         setModalOn={setModalOn}
-        url={require('../images/todoro.webp')}
-        title={'Todoro'}
+        url={require('../images/arnid.webp')}
+        title={'Arnid Xiong'}
         id={2}
       />
       <Thumbnail
         setModalOn={setModalOn}
-        url={require('../images/arnid.webp')}
-        title={'Arnid Xiong'}
+        url={require('../images/neilkim.webp')}
+        title={'Neil Kim'}
         id={3}
       />
     </div>

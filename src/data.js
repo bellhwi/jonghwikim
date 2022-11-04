@@ -14,18 +14,17 @@ const data = [
     website: 'https://pokemon-guesser.netlify.app/',
   },
   {
-    url: require('./images/todoro2.webp'),
-    title: 'Todoro',
-    desc: 'This is a minimal todo list project with a progress bar .',
-    github: 'https://github.com/bellhwi/todoro',
-    website: 'https://todoro-react.netlify.app/',
-  },
-  {
     url: require('./images/arnid2.webp'),
     title: 'Arnid Xiong',
     desc: 'This is a graphic design portfolio website for one of my clients.',
     github: 'https://github.com/bellhwi/ArnidXiong',
     website: 'https://arnidxiong.co/',
+  },
+  {
+    url: require('./images/neilkim2.webp'),
+    title: 'Neil Kim',
+    desc: 'This is an independent game that I developed and published online.',
+    website: 'https://jonghwikim.itch.io/neil-kim',
   },
 ]
 

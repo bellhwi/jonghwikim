@@ -19,13 +19,10 @@ function About() {
           <br></br>
           <p>
             I care about developing useful software services. I was a freelance
-            web developer for a recent year. Before that, I worked as a software
-            quality assurance tester.
-            <br></br>
-            <br></br>I developed a commercial website that is outsourced from my
-            client. I conducted an entire web development process including
-            designing, programming, testing, deploying and maintaining. I'm
-            currently looking for a web developer job.
+            web developer for a recent year. Previously, I used to be an
+            independent game developer. Before that, I worked as a software
+            quality assurance tester. I'm currently looking for a web developer
+            job.
             <br></br>
             <br></br>
             I’d love to hear from you! johnnykim94@hotmail.com
