@@ -24,6 +24,10 @@ footer a:hover {
   cursor: pointer;
 }
 
+.thumbnail img {
+  aspect-ratio: 16/9;
+}
+
 .thumbnail img:hover {
   opacity: 0.7;
 }

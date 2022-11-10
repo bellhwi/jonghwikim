@@ -2,9 +2,33 @@ const data = [
   {
     url: require('./images/haxa2.webp'),
     title: 'Haxa',
-    desc: 'This is a commercial products website that is outsourced from my client.',
+    desc: (
+      <>
+        This is a commercial products website that is outsourced from my client.
+        <br></br>
+        <br></br>
+        <small>
+          <em>Admin: johnnykim94@hotmail.com / fS3Ab11U</em>
+        </small>
+        <br></br>
+        <small>
+          <em>
+            (*The admin page is accessible by clicking the copyright text at
+            footer.)
+          </em>
+        </small>
+      </>
+    ),
     github: 'https://github.com/bellhwi/haxa',
     website: 'https://haxalabs.com/',
+  },
+
+  {
+    url: require('./images/arnid2.webp'),
+    title: 'Arnid Xiong',
+    desc: 'This is a graphic design portfolio website for one of my clients.',
+    github: 'https://github.com/bellhwi/ArnidXiong',
+    website: 'https://arnidxiong.co/',
   },
   {
     url: require('./images/pokemon-guesser2.webp'),
@@ -12,13 +36,6 @@ const data = [
     desc: "This is an API project that guesses what a user's Pokemon is.",
     github: 'https://github.com/bellhwi/pokemon-guesser',
     website: 'https://pokemon-guesser.netlify.app/',
-  },
-  {
-    url: require('./images/arnid2.webp'),
-    title: 'Arnid Xiong',
-    desc: 'This is a graphic design portfolio website for one of my clients.',
-    github: 'https://github.com/bellhwi/ArnidXiong',
-    website: 'https://arnidxiong.co/',
   },
   {
     url: require('./images/neilkim2.webp'),

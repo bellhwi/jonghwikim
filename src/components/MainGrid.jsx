@@ -11,16 +11,17 @@ function MainGrid({ setModalOn }) {
       />
       <Thumbnail
         setModalOn={setModalOn}
-        url={require('../images/pokemon-guesser.webp')}
-        title={'Pokemon Guesser'}
+        url={require('../images/arnid.webp')}
+        title={'Arnid Xiong'}
         id={1}
       />
       <Thumbnail
         setModalOn={setModalOn}
-        url={require('../images/arnid.webp')}
-        title={'Arnid Xiong'}
+        url={require('../images/pokemon-guesser.webp')}
+        title={'Pokemon Guesser'}
         id={2}
       />
+
       <Thumbnail
         setModalOn={setModalOn}
         url={require('../images/neilkim.webp')}
