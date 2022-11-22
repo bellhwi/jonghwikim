@@ -17,8 +17,8 @@ function MainGrid({ setModalOn }) {
       />
       <Thumbnail
         setModalOn={setModalOn}
-        url={require('../images/pokemon-guesser.webp')}
-        title={'Pokemon Guesser'}
+        url={require('../images/johnnyandco.webp')}
+        title={'Johnny & Co.'}
         id={2}
       />
 

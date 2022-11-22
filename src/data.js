@@ -31,11 +31,11 @@ const data = [
     website: 'https://arnidxiong.co/',
   },
   {
-    url: require('./images/pokemon-guesser2.webp'),
-    title: 'Pokemon Guesser',
-    desc: "This is an API project that guesses what a user's Pokemon is.",
-    github: 'https://github.com/bellhwi/pokemon-guesser',
-    website: 'https://pokemon-guesser.netlify.app/',
+    url: require('./images/johnnyandco2.webp'),
+    title: 'Johnny & Co.',
+    desc: 'This is an E-Commerce website created with MERN stack.',
+    github: 'https://github.com/bellhwi/johnnyandco',
+    website: 'https://johnnyandco.uc.r.appspot.com/',
   },
   {
     url: require('./images/neilkim2.webp'),
