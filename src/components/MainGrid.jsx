@@ -8,7 +8,7 @@ function MainGrid({ setModalOn }) {
         url={require('../images/haxa.webp')}
         title={'Haxa'}
         id={0}
-        badges={['SCSS', 'REACT', 'FIREBASE']}
+        badges={['SASS', 'REACT', 'FIREBASE']}
       />
       <Thumbnail
         setModalOn={setModalOn}
