@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@mixin badgeColor($color) {
+  border: 1px solid $color;
+  color: $color;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -94,46 +100,33 @@ footer a:hover {
 
 /* Badge Color */
 .HTML {
-  border: 1px solid #e87d27;
-  color: #e87d27;
+  @include badgeColor((#e87d27));
 }
-
 .CSS {
-  border: 1px solid #3194c9;
-  color: #3194c9;
+  @include badgeColor(#3194c9);
 }
 
 .SCSS {
-  border: 1px solid #c46192;
-  color: #c46192;
+  @include badgeColor(#c46192);
 }
 
 .REACT {
-  border: 1px solid #5cd0ef;
-  color: #5cd0ef;
+  @include badgeColor(#5cd0ef);
 }
-
 .MONGODB {
-  border: 1px solid #4ca33e;
-  color: #4ca33e;
+  @include badgeColor(#4ca33e);
 }
-
 .EXPRESS {
-  border: 1px solid #000;
-  color: #000;
+  @include badgeColor(#000);
 }
 
 .NODEJS {
-  border: 1px solid #c9a227;
-  color: #c9a227;
+  @include badgeColor(#c9a227);
 }
-
 .GODOT {
-  border: 1px solid #560bad;
-  color: #560bad;
+  @include badgeColor(#560bad);
 }
 
 .FIREBASE {
-  border: 1px solid #e04031;
-  color: #e04031;
-}/*# sourceMappingURL=index.css.map */
+  @include badgeColor(#e04031);
+}

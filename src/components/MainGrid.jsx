@@ -2,24 +2,27 @@ import Thumbnail from './Thumbnail'
 
 function MainGrid({ setModalOn }) {
   return (
-    <div className='mt-10 mx-auto grid grid-cols-1 sm:grid-cols-2 items-center gap-4 w-10/12 lg:absolute lg:right-0 lg:mr-8 pb-10'>
+    <div className='mt-10 mx-auto grid grid-cols-1 sm:grid-cols-2 items-center gap-8 sm:gap-4 w-10/12 lg:absolute lg:right-0 lg:mr-8 pb-10'>
       <Thumbnail
         setModalOn={setModalOn}
         url={require('../images/haxa.webp')}
         title={'Haxa'}
         id={0}
-      />
-      <Thumbnail
-        setModalOn={setModalOn}
-        url={require('../images/arnid.webp')}
-        title={'Arnid Xiong'}
-        id={1}
+        badges={['SCSS', 'REACT', 'FIREBASE']}
       />
       <Thumbnail
         setModalOn={setModalOn}
         url={require('../images/johnnyandco.webp')}
         title={'Johnny & Co.'}
+        id={1}
+        badges={['MONGODB', 'EXPRESS', 'REACT', 'NODEJS']}
+      />
+      <Thumbnail
+        setModalOn={setModalOn}
+        url={require('../images/arnid.webp')}
+        title={'Arnid Xiong'}
         id={2}
+        badges={['HTML', 'CSS']}
       />
 
       <Thumbnail
@@ -27,6 +30,7 @@ function MainGrid({ setModalOn }) {
         url={require('../images/neilkim.webp')}
         title={'Neil Kim'}
         id={3}
+        badges={['GODOT']}
       />
     </div>
   )

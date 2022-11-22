@@ -1,7 +1,7 @@
 import { setId } from '../store'
 import { useDispatch } from 'react-redux'
 
-function Thumbnail({ url, title, setModalOn, id }) {
+function Thumbnail({ url, title, setModalOn, id, badges }) {
   const dispatch = useDispatch()
   return (
     <div
@@ -17,7 +17,17 @@ function Thumbnail({ url, title, setModalOn, id }) {
       data-id={id}
     >
       <img src={url} />
-      <small className='block p-2'>{title}</small>
+      <div className='flex mt-2'>
+        {badges &&
+          badges.map((badge, index) => {
+            return (
+              <div key={index} className={`badge badge-outline mr-1 ${badge}`}>
+                {badge}
+              </div>
+            )
+          })}
+      </div>
+      <small className='block p-2 thumbnail-title'>{title}</small>
     </div>
   )
 }

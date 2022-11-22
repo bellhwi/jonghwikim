@@ -8,7 +8,7 @@ const data = [
         <br></br>
         <br></br>
         <small>
-          <em>Admin: johnnykim94@hotmail.com / fS3Ab11U</em>
+          <em>admin@example.com / 123456</em>
         </small>
         <br></br>
         <small>
@@ -22,7 +22,22 @@ const data = [
     github: 'https://github.com/bellhwi/haxa',
     website: 'https://haxalabs.com/',
   },
-
+  {
+    url: require('./images/johnnyandco2.webp'),
+    title: 'Johnny & Co.',
+    desc: (
+      <>
+        This is an E-Commerce website created with MERN stack.
+        <br></br>
+        <br></br>
+        <small>
+          <em>admin@example.com / 123456</em>
+        </small>
+      </>
+    ),
+    github: 'https://github.com/bellhwi/johnnyandco',
+    website: 'https://johnnyandco.uc.r.appspot.com/',
+  },
   {
     url: require('./images/arnid2.webp'),
     title: 'Arnid Xiong',
@@ -30,13 +45,7 @@ const data = [
     github: 'https://github.com/bellhwi/ArnidXiong',
     website: 'https://arnidxiong.co/',
   },
-  {
-    url: require('./images/johnnyandco2.webp'),
-    title: 'Johnny & Co.',
-    desc: 'This is an E-Commerce website created with MERN stack.',
-    github: 'https://github.com/bellhwi/johnnyandco',
-    website: 'https://johnnyandco.uc.r.appspot.com/',
-  },
+
   {
     url: require('./images/neilkim2.webp'),
     title: 'Neil Kim',
