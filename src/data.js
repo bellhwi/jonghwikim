@@ -4,7 +4,7 @@ const data = [
     title: 'Haxa',
     desc: (
       <>
-        Haxa is a commercial products website that is outsourced from my client.
+        Haxa is an eCommerce website that is outsourced from my client.
         <br></br>
         <br></br>
         <small>
