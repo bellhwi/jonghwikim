@@ -4,7 +4,7 @@ const data = [
     title: 'Haxa',
     desc: (
       <>
-        This is a commercial products website that is outsourced from my client.
+        Haxa is a commercial products website that is outsourced from my client.
         <br></br>
         <br></br>
         <small>
@@ -27,7 +27,7 @@ const data = [
     title: 'Johnny & Co.',
     desc: (
       <>
-        This is an E-Commerce website created with MERN stack.
+        Johnny & Co. is an E-Commerce website created with MERN stack.
         <br></br>
         <br></br>
         <small>
@@ -41,7 +41,7 @@ const data = [
   {
     url: require('./images/arnid2.webp'),
     title: 'Arnid Xiong',
-    desc: 'This is a graphic design portfolio website for one of my clients.',
+    desc: 'Arnid Xiong is a graphic design portfolio website for one of my clients.',
     github: 'https://github.com/bellhwi/ArnidXiong',
     website: 'https://arnidxiong.co/',
   },
@@ -49,7 +49,7 @@ const data = [
   {
     url: require('./images/neilkim2.webp'),
     title: 'Neil Kim',
-    desc: 'This is an independent game that I developed and published online.',
+    desc: 'Neil Kim an independent game that I developed and published online.',
     website: 'https://jonghwikim.itch.io/neil-kim',
   },
 ]
