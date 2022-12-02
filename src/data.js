@@ -23,6 +23,13 @@ const data = [
     website: 'https://haxalabs.com/',
   },
   {
+    url: require('./images/pokemon-guesser2.webp'),
+    title: 'Pokemon Guesser',
+    desc: 'Pokemon Guesser is an API(https://pokeapi.co/) project where users can play a guess game.',
+    github: 'https://github.com/bellhwi/pokemon-guesser',
+    website: 'https://pokemon-guesser.netlify.app/',
+  },
+  {
     url: require('./images/johnnyandco2.webp'),
     title: 'Johnny & Co.',
     desc: (

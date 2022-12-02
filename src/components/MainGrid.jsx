@@ -12,16 +12,23 @@ function MainGrid({ setModalOn }) {
       />
       <Thumbnail
         setModalOn={setModalOn}
+        url={require('../images/pokemon-guesser.webp')}
+        title={'Pokemon Guesser'}
+        id={1}
+        badges={['SASS', 'REACT', 'API']}
+      />
+      <Thumbnail
+        setModalOn={setModalOn}
         url={require('../images/johnnyandco.webp')}
         title={'Johnny & Co.'}
-        id={1}
+        id={2}
         badges={['MONGODB', 'EXPRESS', 'REACT', 'NODEJS']}
       />
       <Thumbnail
         setModalOn={setModalOn}
         url={require('../images/arnid.webp')}
         title={'Arnid Xiong'}
-        id={2}
+        id={3}
         badges={['HTML', 'CSS']}
       />
 
@@ -29,7 +36,7 @@ function MainGrid({ setModalOn }) {
         setModalOn={setModalOn}
         url={require('../images/neilkim.webp')}
         title={'Neil Kim'}
-        id={3}
+        id={4}
         badges={['GODOT']}
       />
     </div>

@@ -46,7 +46,7 @@ footer a:hover {
 .thumbnail:hover .thumbnail-title {
   display: block;
   pointer-events: none;
-  font-size: 14px;
+  font-size: 16px;
   opacity: 1;
 }
 
@@ -136,4 +136,9 @@ footer a:hover {
 .FIREBASE {
   border: 1px solid #e04031;
   color: #e04031;
-} /*# sourceMappingURL=index.css.map */
+}
+
+.API {
+  border: 1px solid #7f5539;
+  color: #7f5539;
+}/*# sourceMappingURL=index.css.map */

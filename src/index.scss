@@ -52,7 +52,7 @@ footer a:hover {
 .thumbnail:hover .thumbnail-title {
   display: block;
   pointer-events: none;
-  font-size: 14px;
+  font-size: 16px;
   opacity: 1;
 }
 
@@ -106,7 +106,7 @@ footer a:hover {
   @include badgeColor(#3194c9);
 }
 
-.SCSS {
+.SASS {
   @include badgeColor(#c46192);
 }
 
@@ -129,4 +129,8 @@ footer a:hover {
 
 .FIREBASE {
   @include badgeColor(#e04031);
+}
+
+.API {
+  @include badgeColor(#7f5539);
 }
