@@ -24,11 +24,9 @@ function Home() {
     document.title = 'jonghwi kim'
 
     // Preload modal images
-    data.forEach((item) => {
+    data.forEach((image) => {
       const modalImg = new Image()
-      modalImg.src = item.fileName
-
-      console.log(item)
+      modalImg.src = image.fileName
     })
   }, [])
 
