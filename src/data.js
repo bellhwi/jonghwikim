@@ -21,6 +21,15 @@ const data = [
     ),
     github: 'https://github.com/bellhwi/haxa',
     website: 'https://haxalabs.com/',
+    badges: ['SASS', 'REACT', 'FIREBASE'],
+  },
+  {
+    url: require('./images/arnid2.webp'),
+    title: 'Arnid Xiong',
+    desc: 'Arnid Xiong is a graphic design portfolio website for one of my clients.',
+    github: 'https://github.com/bellhwi/ArnidXiong',
+    website: 'https://arnidxiong.co/',
+    badges: ['HTML', 'CSS'],
   },
   {
     url: require('./images/pokemon-guesser2.webp'),
@@ -28,6 +37,7 @@ const data = [
     desc: 'Pokemon Guesser is an API(https://pokeapi.co/) project where users can play a guess game.',
     github: 'https://github.com/bellhwi/pokemon-guesser',
     website: 'https://pokemon-guesser.netlify.app/',
+    badges: ['SASS', 'REACT', 'API'],
   },
   {
     url: require('./images/johnnyandco2.webp'),
@@ -44,13 +54,7 @@ const data = [
     ),
     github: 'https://github.com/bellhwi/johnnyandco',
     website: 'https://johnnyandco.uc.r.appspot.com/',
-  },
-  {
-    url: require('./images/arnid2.webp'),
-    title: 'Arnid Xiong',
-    desc: 'Arnid Xiong is a graphic design portfolio website for one of my clients.',
-    github: 'https://github.com/bellhwi/ArnidXiong',
-    website: 'https://arnidxiong.co/',
+    badges: ['MONGODB', 'EXPRESS', 'REACT', 'NODEJS'],
   },
 
   {
@@ -58,6 +62,7 @@ const data = [
     title: 'Neil Kim',
     desc: 'Neil Kim an independent game that I developed and published online.',
     website: 'https://jonghwikim.itch.io/neil-kim',
+    badges: ['GODOT'],
   },
 ]
 

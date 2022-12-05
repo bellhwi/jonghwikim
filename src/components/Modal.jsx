@@ -1,12 +1,27 @@
-function Modal({ url, title, desc, github, website }) {
+function Modal({ url, title, desc, github, website, badges }) {
   return (
     <div className='myModal-container'>
       <div className='card card-compact bg-base-100 shadow-xl myModal w-11/12 lg:w-3/5'>
         <figure>
-          <img src={url} />
+          <img src={url} draggable={false} />
         </figure>
         <div className='card-body'>
-          <h2 className='card-title text-base'>{title}</h2>
+          <div className='flex items-center'>
+            <h2 className='card-title text-base'>{title}</h2>
+            <div className='flex badges ml-2'>
+              {badges &&
+                badges.map((badge, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className={`badge badge-outline mr-1 ${badge}`}
+                    >
+                      {badge}
+                    </div>
+                  )
+                })}
+            </div>
+          </div>
           <p className='pt-1 pb-4 pl-1 text-sm'>{desc}</p>
           <div className='card-actions justify-end'>
             {github ? (
@@ -21,7 +36,7 @@ function Modal({ url, title, desc, github, website }) {
             ) : null}
             {website ? (
               <a
-                className='btn btn-primary text-sm'
+                className='btn btn-primary text-sm btn-view'
                 href={website}
                 target='_blank'
                 rel='noreferrer'

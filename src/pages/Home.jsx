@@ -33,6 +33,7 @@ function Home() {
           desc={data[id].desc}
           github={data[id].github}
           website={data[id].website}
+          badges={data[id].badges}
         />
       ) : null}
       <Navbar />
