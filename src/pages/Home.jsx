@@ -27,6 +27,8 @@ function Home() {
     data.forEach((item) => {
       const modalImg = new Image()
       modalImg.src = item.fileName
+
+      console.log(item)
     })
   }, [])
 

@@ -27,7 +27,7 @@ function About() {
             <br></br>
             I’d love to hear from you! johnnykim94@hotmail.com
           </p>
-          <br></br>
+          {/* <br></br>
           <h3 className='tech-title'>Tech Stack:</h3>
           <div className='tech-container'>
             <img
@@ -149,7 +149,7 @@ function About() {
 '
               alt='Linux'
             />
-          </div>
+          </div> */}
           <a
             className='btn btn-tertiary mt-12'
             href='https://docs.google.com/document/d/1-X1DLL1w5mDYhfPo5MGjhvFamdA_74ZJt8DEc71j2pw/edit?usp=sharing'
@@ -160,7 +160,7 @@ function About() {
           </a>
         </div>
         <div className='profile-img w-1/2 mx-auto'>
-          <img src={require('../images/jonghwikim.webp')} />
+          <img src={`${process.env.PUBLIC_URL}/images/jonghwikim.webp`} />
         </div>
       </div>
       {maxWidth >= 1024 ? null : <Footer />}
