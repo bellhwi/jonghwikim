@@ -56,6 +56,14 @@ const data = [
     website: 'https://johnnyandco.uc.r.appspot.com/',
     badges: ['MONGODB', 'EXPRESS', 'REACT', 'NODEJS'],
   },
+  {
+    url: `${process.env.PUBLIC_URL}/images/todoro2.webp`,
+    title: 'Todoro',
+    desc: 'Todoro is a simple todo list with progress bar feature.',
+    github: 'https://github.com/bellhwi/todoro',
+    website: 'https://todoro-react.netlify.app/',
+    badges: ['HTML', 'CSS', 'JAVASCRIPT', 'REACT'],
+  },
 
   {
     url: `${process.env.PUBLIC_URL}/images/neilkim2.webp`,
