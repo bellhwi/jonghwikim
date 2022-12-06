@@ -119,6 +119,10 @@ footer a:hover {
   @include badgeColor(#3194c9);
 }
 
+.JAVASCRIPT {
+  @include badgeColor(#ffc300);
+}
+
 .SASS {
   @include badgeColor(#c46192);
 }

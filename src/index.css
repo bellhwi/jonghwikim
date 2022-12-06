@@ -116,6 +116,11 @@ footer a:hover {
   color: #3194c9;
 }
 
+.JAVASCRIPT {
+  border: 1px solid #ffc300;
+  color: #ffc300;
+}
+
 .SASS {
   border: 1px solid #c46192;
   color: #c46192;
