@@ -22,12 +22,6 @@ function Home() {
 
   useEffect(() => {
     document.title = 'jonghwi kim'
-
-    // Preload modal images
-    data.forEach((image) => {
-      const modalImg = new Image()
-      modalImg.src = image.fileName
-    })
   }, [])
 
   return (
