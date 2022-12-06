@@ -2,7 +2,7 @@
 
 > [Jonghwi Kim](https://jonghwikim.com/) is a portfolio website to showcase my projects 🧑🏻‍💻
 
-<p align="center"><img src="public/images/github-cover.png" width="50%"></p>
+<p align="center"><img src="public/images/github-cover.png"></p>
 
 ## Features
 
