@@ -31,7 +31,7 @@ function Home() {
   }, [])
 
   return (
-    <div className='relative h-screen'>
+    <div className='myContainer relative h-screen'>
       {modalOn ? (
         <Modal
           url={data[id].url}
