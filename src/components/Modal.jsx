@@ -1,9 +1,35 @@
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Navigation, Autoplay } from 'swiper'
+
 function Modal({ url, title, desc, github, website, badges }) {
   return (
     <div className='myModal-container'>
       <div className='card card-compact bg-base-100 shadow-xl myModal w-11/12 lg:w-3/5'>
         <figure>
-          <img src={url} draggable={false} />
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            modules={[Pagination, Navigation, Autoplay]}
+            className='mySwiper'
+          >
+            {url.map((src, index) => {
+              return (
+                <SwiperSlide>
+                  <img key={index} src={src} draggable={false}></img>
+                </SwiperSlide>
+              )
+            })}
+          </Swiper>
         </figure>
         <div className='card-body'>
           <div className='flex items-center'>

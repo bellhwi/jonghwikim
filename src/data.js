@@ -1,20 +1,23 @@
+const getURLs = (fileName) => {
+  const urls = [...new Array(3).keys()].map((index) => {
+    return `${process.env.PUBLIC_URL}/images/${fileName}${index}.webp`
+  })
+
+  return urls
+}
+
 const data = [
   {
-    url: `${process.env.PUBLIC_URL}/images/haxa2.webp`,
+    url: getURLs('haxa'),
     title: 'Haxa',
     desc: (
       <>
         Haxa is an eCommerce website that is outsourced from my client.
         <br></br>
-        <br></br>
-        <small>
-          <em>admin@example.com / 123456</em>
-        </small>
-        <br></br>
-        <small>
+        <small style={{ color: '#5a5a5a' }}>
           <em>
-            (*The admin page is accessible by clicking the copyright text at
-            footer.)
+            admin@example.com / 123456 (*The admin page is accessible by
+            clicking the copyright text at footer.)
           </em>
         </small>
       </>
@@ -24,7 +27,7 @@ const data = [
     badges: ['SASS', 'REACT', 'FIREBASE'],
   },
   {
-    url: `${process.env.PUBLIC_URL}/images/arnid2.webp`,
+    url: getURLs('arnid'),
     title: 'Arnid Xiong',
     desc: 'Arnid Xiong is a graphic design portfolio website for one of my clients.',
     github: 'https://github.com/bellhwi/ArnidXiong',
@@ -32,22 +35,29 @@ const data = [
     badges: ['HTML', 'CSS'],
   },
   {
-    url: `${process.env.PUBLIC_URL}/images/pokemon-guesser2.webp`,
+    url: getURLs('pokemon-guesser'),
     title: 'Pokemon Guesser',
-    desc: 'Pokemon Guesser is an API(https://pokeapi.co/) project where users can play a guess game.',
+    desc: (
+      <>
+        Pokemon Guesser is an{' '}
+        <a href='https://pokeapi.co/' style={{ color: '#3366CC' }}>
+          PokeAPI
+        </a>{' '}
+        project where users can play a guess game.
+      </>
+    ),
     github: 'https://github.com/bellhwi/pokemon-guesser',
     website: 'https://pokemon-guesser.netlify.app/',
     badges: ['SASS', 'REACT', 'API'],
   },
   {
-    url: `${process.env.PUBLIC_URL}/images/johnnyandco2.webp`,
+    url: getURLs('johnnyandco'),
     title: 'Johnny & Co.',
     desc: (
       <>
         Johnny & Co. is an E-Commerce website created with MERN stack.
         <br></br>
-        <br></br>
-        <small>
+        <small style={{ color: '#5a5a5a' }}>
           <em>admin@example.com / 123456</em>
         </small>
       </>
@@ -57,7 +67,7 @@ const data = [
     badges: ['MONGODB', 'EXPRESS', 'REACT', 'NODEJS'],
   },
   {
-    url: `${process.env.PUBLIC_URL}/images/todoro2.webp`,
+    url: getURLs('todoro'),
     title: 'Todoro',
     desc: 'Todoro is a simple todo list with progress bar feature.',
     github: 'https://github.com/bellhwi/todoro',
@@ -66,7 +76,7 @@ const data = [
   },
 
   {
-    url: `${process.env.PUBLIC_URL}/images/neilkim2.webp`,
+    url: getURLs('neilkim'),
     title: 'Neil Kim',
     desc: 'Neil Kim an independent game that I developed and published online.',
     website: 'https://jonghwikim.itch.io/neil-kim',
