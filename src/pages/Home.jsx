@@ -16,13 +16,17 @@ function Home() {
     myContainer.addEventListener('click', (e) => {
       if (e.target.className == 'myModal-container') {
         setModalOn(false)
+        document.getElementById('myBody').classList.contains('scrollLock') &&
+          document.getElementById('myBody').classList.remove('scrollLock')
       }
     })
   }
 
   useEffect(() => {
     document.title = 'jonghwi kim'
-  }, [])
+
+    document.getElementById('myBody').classList.add('scrollLock')
+  }, [modalOn])
 
   return (
     <div className='myContainer relative h-screen'>
