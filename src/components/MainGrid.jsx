@@ -26,17 +26,11 @@ function MainGrid({ setModalOn }) {
         id={3}
         scale='0.5'
       />
-      <Thumbnail
-        setModalOn={setModalOn}
-        url={`${process.env.PUBLIC_URL}/images/todoro.webp`}
-        id={4}
-        scale='0.6'
-      />
 
       <Thumbnail
         setModalOn={setModalOn}
         url={`${process.env.PUBLIC_URL}/images/neilkim.webp`}
-        id={5}
+        id={4}
         scale='0.95'
       />
     </div>
