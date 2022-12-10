@@ -13,20 +13,27 @@ function About() {
   return (
     <>
       <Navbar />
-      <div className='profile flex justify-center align-center flex-col-reverse lg:flex-row w-10/12 lg:w-9/12 lg:pt-16 pt-10 mx-auto relative'>
-        <div className='profile-info lg:pr-12 lg:w-1/2 pt-8 lg:pt-0'>
+      <div className='profile flex justify-center align-center flex-col-reverse lg:flex-row w-10/12 lg:w-9/12 lg:pt-16 pt-10 mx-auto relative lg:justify-between'>
+        <div className='profile-info lg:pr-10 lg:w-1/2 pt-8 lg:pt-0'>
           <h2>Hi, I'm Jonghwi from South Korea.</h2>
           <br></br>
           <p>
-            I care about developing useful software services. I was a freelance
-            web developer for a recent year. Previously, I used to be an
-            independent game developer. Before that, I worked as a software
-            quality assurance tester. I'm currently looking for a web developer
-            job.
-            <br></br>
-            <br></br>
-            I’d love to hear from you! johnnykim94@hotmail.com
+            I have 3+ years overall experience in software development and
+            testing. I've been freelancing at Upwork for a recent year. I've
+            created eCommerce and portfolio websites for clients. I'm currently
+            looking for React Frontend Developer job position. Below are my
+            specialties,
           </p>
+          <br></br>
+          <ul>
+            <li>🧑🏻‍💻 I write extendable and clean code.</li>
+            <li>💎 I pursue creating error-free software.</li>
+            <li>🔬 I have a persistent attitude of problem solving.</li>
+            <li>⭐️ I prioritize visually aesthetic and pleasant UI/UX.</li>
+            <li>
+              🚀 I care about developing highly performant web application.
+            </li>
+          </ul>
           {/* <br></br>
           <h3 className='tech-title'>Tech Stack:</h3>
           <div className='tech-container'>
@@ -150,17 +157,27 @@ function About() {
               alt='Linux'
             />
           </div> */}
-          <a
-            className='btn btn-tertiary mt-12'
-            href='https://docs.google.com/document/d/1-X1DLL1w5mDYhfPo5MGjhvFamdA_74ZJt8DEc71j2pw/edit?usp=sharing'
-            target='_blank'
-            rel='noreferrer'
-          >
-            View My Resume
-          </a>
+          <div className='flex mt-12'>
+            <a
+              className='btn btn-view'
+              href='https://docs.google.com/document/d/1-X1DLL1w5mDYhfPo5MGjhvFamdA_74ZJt8DEc71j2pw/edit?usp=sharing'
+              target='_blank'
+              rel='noreferrer'
+            >
+              View My Resume
+            </a>
+            <a
+              className='btn btn-tertiary ml-2'
+              href='mailto: johnnykim94@hotmail.com'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Contact Me
+            </a>
+          </div>
         </div>
-        <div className='profile-img w-1/2 mx-auto'>
-          <img src={`${process.env.PUBLIC_URL}/images/jonghwikim.webp`} />
+        <div className='profile-img w-4/5 mx-auto lg:w-full lg:m-0'>
+          <img src={`${process.env.PUBLIC_URL}/images/jonghwikim.jpg`} />
         </div>
       </div>
       {maxWidth >= 1024 ? null : <Footer />}
