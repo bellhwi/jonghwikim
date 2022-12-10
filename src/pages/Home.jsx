@@ -16,8 +16,8 @@ function Home() {
     myContainer.addEventListener('click', (e) => {
       if (e.target.className == 'myModal-container') {
         setModalOn(false)
-        document.getElementById('myBody').classList.contains('scrollLock') &&
-          document.getElementById('myBody').classList.remove('scrollLock')
+        // document.getElementById('myBody').classList.contains('scrollLock') &&
+        //   document.getElementById('myBody').classList.remove('scrollLock')
       }
     })
   }

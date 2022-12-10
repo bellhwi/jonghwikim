@@ -102,11 +102,6 @@ function About() {
               alt='MySQL'
             />
             <img
-              src='https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black
-'
-              alt='Firebase'
-            />
-            <img
               src='https://img.shields.io/badge/Sketch-FFB387?style=for-the-badge&logo=sketch&logoColor=black
 '
               alt='Sketch'
