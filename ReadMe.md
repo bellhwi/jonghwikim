@@ -9,7 +9,7 @@
 - 📱 Responsive design
 - 🖼️ Mock-up thumbnail
 - 🎨 Vanilla CSS animation
-- 🌉 Preloaded images
+- 🌌 Preloaded images
 
 ## Tech
 
