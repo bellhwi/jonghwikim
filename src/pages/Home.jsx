@@ -25,7 +25,7 @@ function Home() {
   useEffect(() => {
     document.title = 'jonghwi kim'
 
-    document.getElementById('myBody').classList.add('scrollLock')
+    // document.getElementById('myBody').classList.add('scrollLock')
   }, [modalOn])
 
   return (
