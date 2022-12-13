@@ -25,7 +25,9 @@ function Navbar() {
         <NavLink
           to='/'
           className={({ isActive }) =>
-            isActive ? 'text-gray-400 pr-2' : 'link pr-2'
+            isActive
+              ? 'text-gray-400 pr-2 no-underline'
+              : 'link pr-2 no-underline'
           }
         >
           Projects
@@ -34,6 +36,7 @@ function Navbar() {
           href='https://docs.google.com/document/d/1cCmYlvT7zN1VVJ4X7mH-5sxntNe4PvYZ5K1fgKZWyMg/edit'
           target='_blank'
           rel='noreferrer'
+          className='no-underline'
         >
           Docs
         </a>
@@ -41,7 +44,9 @@ function Navbar() {
         <NavLink
           to='/about'
           className={({ isActive }) =>
-            isActive ? 'text-gray-400 pl-2 lg:pl-0' : 'link pl-2 lg:pl-0'
+            isActive
+              ? 'text-gray-400 pl-2 lg:pl-0 no-underline'
+              : 'link pl-2 lg:pl-0 no-underline'
           }
         >
           About
