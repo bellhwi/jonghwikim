@@ -1,29 +1,15 @@
-import { setId } from '../store'
-import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { data } from '../data'
 
-function Thumbnail({ url, setModalOn, id, scale }) {
-  const dispatch = useDispatch()
+function Thumbnail({ url, index, scale }) {
+  const navigate = useNavigate()
   return (
     <div
       className='thumbnail'
       style={{ transform: `scale(${scale})` }}
-      onClick={(e) => {
-        const div = e.target.parentElement
-        let promise = new Promise((res) =>
-          res(dispatch(setId(parseInt(div.getAttribute('data-id')))))
-        )
-
-        promise
-          .then(() => setModalOn(true))
-          .then(
-            () =>
-              setTimeout(() =>
-                document.querySelector('.myModal').classList.add('show')
-              ),
-            100
-          )
+      onClick={() => {
+        navigate(`/${data[index].id}`)
       }}
-      data-id={id}
     >
       <img src={url} draggable={false} />
     </div>

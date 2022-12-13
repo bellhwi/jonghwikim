@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@mixin badgeColor($color) {
-  border: 1px solid $color;
-  color: $color;
-}
-
-// body.scrollLock {
-//   overflow: hidden;
-// }
-
 * {
   padding: 0;
   margin: 0;
@@ -43,53 +34,6 @@ footer a:hover {
   filter: saturate(1);
 }
 
-.myModal-container {
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-.myModal {
-  opacity: 0;
-  transform: scale(0.5);
-  z-index: 100;
-  transition: all 0.4s;
-}
-
-.myModal.show {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.modal-desc-container {
-  border-left: 2px solid #d3d3d3;
-  padding-left: 8px;
-}
-
-.modal-desc {
-  color: #5a5a5a;
-}
-
-.modal-content-heading {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 12px 0px 8px;
-}
-
-.modal-content ul {
-  list-style: disc;
-  padding-left: 24px;
-}
-
 .profile-info h2 {
   font-size: 14px;
   font-weight: bold;
@@ -115,19 +59,6 @@ footer a:hover {
   filter: grayscale(100%) brightness(120%);
 }
 
-.badge {
-  font-size: 8px;
-}
-
-.btn-view {
-  background-color: #0466c8;
-  border: none;
-}
-
-.btn-view:hover {
-  background-color: #0353a4;
-}
-
 // Overwrite Framework
 .swiper-button-prev,
 .swiper-button-next {
@@ -136,54 +67,4 @@ footer a:hover {
 
 .swiper-pagination-bullet {
   background-color: #d3d3d3 !important;
-}
-
-.card {
-  border-radius: 0px !important;
-}
-
-.card-title {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-/* Badge Color */
-.HTML {
-  @include badgeColor((#e87d27));
-}
-.CSS {
-  @include badgeColor(#3194c9);
-}
-
-.JAVASCRIPT {
-  @include badgeColor(#ffc300);
-}
-
-.SASS {
-  @include badgeColor(#c46192);
-}
-
-.REACT {
-  @include badgeColor(#5cd0ef);
-}
-.MONGODB {
-  @include badgeColor(#4ca33e);
-}
-.EXPRESS {
-  @include badgeColor(#000);
-}
-
-.NODEJS {
-  @include badgeColor(#c9a227);
-}
-.GODOT {
-  @include badgeColor(#560bad);
-}
-
-.FIREBASE {
-  @include badgeColor(#e04031);
-}
-
-.API {
-  @include badgeColor(#7f5539);
 }
