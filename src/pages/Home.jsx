@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import Navbar from '../components/Navbar'
 import MainGrid from '../components/MainGrid'
-import { data } from '../data'
 import Footer from '../components/Footer'
 
 function Home() {
@@ -10,6 +9,8 @@ function Home() {
 
   useEffect(() => {
     document.title = 'jonghwi kim'
+    window.scrollTo(0, 0)
+    console.log('im home')
   }, [])
 
   return (

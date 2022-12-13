@@ -18,6 +18,7 @@ function Project() {
 
   useEffect(() => {
     document.title = `${title} - jonghwi kim`
+    window.scrollTo(0, 0)
   }, [])
 
   return (

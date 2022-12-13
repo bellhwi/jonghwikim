@@ -11,11 +11,7 @@ function Thumbnail({ url, index, scale }) {
         navigate(`/${data[index].id}`)
       }}
     >
-      <img
-        src={url}
-        draggable={false}
-        className='saturate-0 transition-all hover:saturate-100 duration-500'
-      />
+      <img src={url} draggable={false} className='thumbnail' />
     </div>
   )
 }

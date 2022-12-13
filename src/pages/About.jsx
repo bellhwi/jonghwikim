@@ -8,6 +8,7 @@ function About() {
 
   useEffect(() => {
     document.title = 'About - jonghwi kim'
+    window.scrollTo(0, 0)
   }, [])
 
   return (
@@ -55,8 +56,11 @@ function About() {
             </a>
           </div>
         </div>
-        <div className='profile-img w-4/5 mx-auto lg:w-full lg:m-0'>
-          <img src={`${process.env.PUBLIC_URL}/images/jonghwikim.jpg`} />
+        <div className='max-w-screen-sm w-4/5 mx-auto lg:w-full lg:m-0'>
+          <img
+            className='relative grayscale brightness-125'
+            src={`${process.env.PUBLIC_URL}/images/jonghwikim.jpg`}
+          />
         </div>
       </div>
       {maxWidth >= 1024 ? null : <Footer />}
