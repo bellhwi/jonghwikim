@@ -31,7 +31,8 @@ function Project() {
         <p className='border-l-2 border-gray-300 text-gray-500 ml-2 pl-2'>
           {contents.heading}
         </p>
-        <div className='card-actions justify-end pt-6 pb-2 mx-auto sm:mx-0'>
+        <p className='pt-4 text-gray-700 text-xs sm:text-sm'>{contents.desc}</p>
+        <div className='card-actions justify-end pt-4 pb-2 mx-auto sm:mx-0'>
           {contents.github ? (
             <a
               className='btn text-xs sm:text-sm rounded-none border border-black bg-transparent text-black hover:bg-transparent'
@@ -53,9 +54,9 @@ function Project() {
             </a>
           ) : null}
         </div>
-        {contents.desc && (
+        {contents.alert && (
           <small className='text-sm sm:text-md mt-4 bg-slate-300 p-2 text-center'>
-            {contents.desc}
+            {contents.alert}
           </small>
         )}
         <div className='w-full mt-6 mb-6'>

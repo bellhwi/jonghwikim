@@ -26,6 +26,8 @@ const techURLs = {
     'https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white',
   godot:
     'https://img.shields.io/badge/Godot-478CBF?style=for-the-badge&logo=GodotEngine&logoColor=white',
+  gcloud:
+    'https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white',
 }
 
 const data = [
@@ -34,11 +36,11 @@ const data = [
     title: 'Haxa',
     id: 'haxa',
     contents: {
-      heading:
-        'Haxa is an eCommerce website that is outsourced from my client.',
-      desc: '📌 Admin page is accessible by clicking the copyright text at footer. (admin@example.com / 123456)',
+      heading: 'eCommerce website built with React & Firebase.',
+      desc: 'Haxa is the eCommerce project for my entrepreneur client. I closely communicated with my client to meet his visual and functional requirements. After discussion, I designed and developed an entire website and deployed it.',
+      alert:
+        '📌 Admin page is accessible by clicking the copyright text at footer. (admin@example.com / 123456)',
       features: [
-        '💎 Freelance project',
         '🧑🏻‍💻 User authentication',
         '🔍 Search product',
         '🧑🏻‍💼 Admin product management',
@@ -64,13 +66,13 @@ const data = [
     id: 'arnidxiong',
     title: 'Arnid Xiong',
     contents: {
-      heading:
-        'Arnid Xiong is a graphic design portfolio website for one of my clients.',
+      heading: 'Graphic design portfolio website built with HTML, CSS.',
+      desc: 'Arnid Xiong is a portfolio project for my graphic designer client. She provided a wireframe and requested me to implement it on the website. I developed this project without any frameworks.',
       features: [
-        '💎 Freelance project',
         '💻 Wireframe design to code',
         '📱 Responsive design',
-        '🎨 Pure CSS',
+        '🎨 Design with pure CSS',
+        '🧭 See more navigation',
       ],
       techs: [techURLs.html, techURLs.css],
       github: 'https://github.com/bellhwi/ArnidXiong',
@@ -84,17 +86,28 @@ const data = [
     contents: {
       heading: (
         <>
-          Pokemon Guesser is an{' '}
-          <a href='https://pokeapi.co/' style={{ color: '#3366CC' }}>
+          <a
+            href='https://pokeapi.co/'
+            style={{ color: '#3366CC' }}
+            target='_blank'
+          >
             PokeAPI
           </a>{' '}
-          project where users can play a guess game.
+          project built with React & Redux.
+        </>
+      ),
+      desc: (
+        <>
+          Pokemon Guesser is an API project where users can play a guess game. I
+          made this website out of my interest in Pokemon. I wrote a code logic
+          that questions might vary based on user answers. I implemented
+          algorithms that narrow down the Pokemon until the only one is left.
         </>
       ),
       features: [
-        '🕹️ API project',
+        '🕹️ Fetch API',
         '🎯 User selection filter',
-        '🤖 Different question algorithm by answer',
+        '🤖 Different question algorithm by user response',
         '🚫 Not found page',
       ],
       techs: [
@@ -114,8 +127,30 @@ const data = [
     id: 'johnny-and-co',
     title: 'Johnny & Co.',
     contents: {
-      heading: 'Johnny & Co. is an E-Commerce website created with MERN stack.',
-      desc: '📌 Admin page is available. (admin@example.com / 123456)',
+      heading: 'eCommerce website built with MERN stack.',
+      desc: (
+        <>
+          Johnny & Co. is an eCommerce website that I developed along with this{' '}
+          <a
+            href='https://www.udemy.com/course/mern-ecommerce/'
+            style={{ color: '#3366CC' }}
+            target='_blank'
+          >
+            Udemy course
+          </a>
+          . I gained better understanding of full stack development from this
+          hands-on project. I customized a design inspired by{' '}
+          <a
+            href='https://www.tiffany.com/'
+            style={{ color: '#3366CC' }}
+            target='_blank'
+          >
+            Tiffany & Co.
+          </a>{' '}
+          official website. I used Google Cloud Platform for hosting.
+        </>
+      ),
+      alert: '📌 Admin page is available. (admin@example.com / 123456)',
       features: [
         '🧑🏻‍💼 Admin product management',
         '👨‍👩‍👦 Admin user management',
@@ -125,7 +160,7 @@ const data = [
         '🔍 Search product',
         '🛒 Shopping cart',
         '👩🏻 User profile with orders',
-        '🚚 Checkout process (shipping, payment method, etc)',
+        '🚚 Checkout process (shipping, payment method, etc.)',
       ],
       techs: [
         techURLs.html,
@@ -136,6 +171,7 @@ const data = [
         techURLs.nodejs,
         techURLs.mongodb,
         techURLs.express,
+        techURLs.gcloud,
       ],
       github: 'https://github.com/bellhwi/johnnyandco',
       website: 'https://johnnyandco.uc.r.appspot.com/',
@@ -146,8 +182,8 @@ const data = [
     id: 'neil-kim',
     title: 'Neil Kim',
     contents: {
-      heading:
-        'Neil Kim is an independent game that I developed and published online.',
+      heading: '2D platformer game built with Godot game engine.',
+      desc: 'Neil Kim is an independent game that I developed and published online. I created this game to experience game development. I performed an entire process of game production including planning, designing, developing, testing, publishing and marketing.',
       features: [
         '🧨 10 exclusive weapons',
         '🎮 21 levels',
