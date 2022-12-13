@@ -11,6 +11,10 @@
   filter: saturate(1);
 }
 
+.profile-img {
+  filter: grayscale(100%) brightness(120%);
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: #d3d3d3 !important;

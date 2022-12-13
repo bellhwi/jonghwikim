@@ -58,7 +58,7 @@ function About() {
         </div>
         <div className='max-w-screen-sm w-4/5 mx-auto lg:w-full lg:m-0'>
           <img
-            className='relative grayscale brightness-125'
+            className='profile-img relative'
             src={`${process.env.PUBLIC_URL}/images/jonghwikim.jpg`}
           />
         </div>
