@@ -28,10 +28,9 @@ function Project() {
         <div className='flex flex-col justify-between items-center sm:flex-row'>
           <h1 className='text-4xl font-semibold pb-4'>{title}</h1>
         </div>
-        <p className='border-l-2 border-gray-300 text-gray-500 ml-2 pl-2'>
+        <p className='border-l-2 border-gray-300 text-gray-500 pl-2 mx-auto sm:ml-2'>
           {contents.heading}
         </p>
-        <p className='pt-4 text-gray-700 text-xs sm:text-sm'>{contents.desc}</p>
         <div className='card-actions justify-end pt-4 pb-2 mx-auto sm:mx-0'>
           {contents.github ? (
             <a
@@ -85,9 +84,15 @@ function Project() {
             })}
           </Swiper>
         </div>
+        <h4 className='modal-content-heading font-semibold'>OVERVIEW</h4>
+        <hr className='mt-1' />
+        <p className='pt-2 text-gray-700 text-xs sm:text-sm ml-4'>
+          {contents.desc}
+        </p>
 
-        <h4 className='modal-content-heading font-semibold'>FEATURES</h4>
-        <ul className='list-disc pl-6 mt-2 mb-4'>
+        <h4 className='modal-content-heading font-semibold mt-6'>FEATURES</h4>
+        <hr className='mt-1' />
+        <ul className='list-disc pl-6 mt-2'>
           {contents.features.map((feature, index) => {
             return (
               <li key={index} className='text-gray-700 text-sm sm:text-md'>
@@ -96,7 +101,7 @@ function Project() {
             )
           })}
         </ul>
-        <h4 className='modal-content-heading font-semibold mb-1'>TECH</h4>
+        <h4 className='modal-content-heading font-semibold mb-1 mt-6'>TECH</h4>
         <div className='flex flex-wrap pb-4'>
           {contents.techs.map((tech, index) => {
             return <img key={index} src={tech} className='p-0.5' />

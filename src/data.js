@@ -37,7 +37,14 @@ const data = [
     id: 'haxa',
     contents: {
       heading: 'eCommerce website built with React & Firebase.',
-      desc: 'Haxa is the eCommerce project for my entrepreneur client. I closely communicated with my client to meet his visual and functional requirements. After discussion, I designed and developed an entire website and deployed it.',
+      desc: (
+        <>
+          Haxa is the eCommerce project for my entrepreneur client. I closely
+          communicated with my client to meet his visual and functional
+          requirements. After discussion, I designed and developed an entire
+          website and deployed it.
+        </>
+      ),
       alert:
         '📌 Admin page is accessible by clicking the copyright text at footer. (admin@example.com / 123456)',
       features: [
@@ -96,14 +103,7 @@ const data = [
           project built with React & Redux.
         </>
       ),
-      desc: (
-        <>
-          Pokemon Guesser is an API project where users can play a guess game. I
-          made this website out of my interest in Pokemon. I wrote a code logic
-          that questions might vary based on user answers. I implemented
-          algorithms that narrow down the Pokemon until the only one is left.
-        </>
-      ),
+      desc: 'Pokemon Guesser is an API project where users can play a guess game. I made this website out of my interest in Pokemon. I wrote a code logic that questions might vary based on user answers. I implemented algorithms that narrow down the Pokemon until the only one is left.',
       features: [
         '🕹️ Fetch API',
         '🎯 User selection filter',
