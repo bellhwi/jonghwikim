@@ -1,3 +1,6 @@
+import { techURLs } from './techs'
+import { overviews } from './overviews'
+
 const getURLs = (fileName) => {
   const urls = [...new Array(3).keys()].map((index) => {
     return `${process.env.PUBLIC_URL}/images/${fileName}${index}.webp`
@@ -6,44 +9,20 @@ const getURLs = (fileName) => {
   return urls
 }
 
-const techURLs = {
-  html: 'https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white',
-  css: 'https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white',
-  javascript:
-    'https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E',
-  sass: 'https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white',
-  react:
-    'https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB',
-  redux:
-    'https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white',
-  firebase:
-    'https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black',
-  nodejs:
-    'https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
-  mongodb:
-    'https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white',
-  express:
-    'https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white',
-  godot:
-    'https://img.shields.io/badge/Godot-478CBF?style=for-the-badge&logo=GodotEngine&logoColor=white',
-  gcloud:
-    'https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white',
-}
-
 const data = [
   {
     url: getURLs('haxa'),
     title: 'Haxa',
     id: 'haxa',
+    badges: ['SASS', 'REACT', 'REDUX', 'FIREBASE'],
     contents: {
       heading: 'eCommerce website built with React & Firebase.',
       desc: (
-        <>
-          Haxa is the eCommerce project for my entrepreneur client. I closely
-          communicated with my client to meet his visual and functional
-          requirements. After discussion, I designed and developed an entire
-          website and deployed it.
-        </>
+        <div className='ml-2'>
+          {overviews['haxa'].map((desc, index) => {
+            return <div key={index}>{desc}</div>
+          })}
+        </div>
       ),
       alert:
         '📌 Admin page is accessible by clicking the copyright text at footer. (admin@example.com / 123456)',
@@ -72,9 +51,16 @@ const data = [
     url: getURLs('arnid'),
     id: 'arnidxiong',
     title: 'Arnid Xiong',
+    badges: ['HTML', 'CSS'],
     contents: {
       heading: 'Graphic design portfolio website built with HTML, CSS.',
-      desc: 'Arnid Xiong is a portfolio project for my graphic designer client. She provided a wireframe and requested me to implement it on the website. I developed this project without any frameworks.',
+      desc: (
+        <div className='ml-2'>
+          {overviews['arnid'].map((desc, index) => {
+            return <div key={index}>{desc}</div>
+          })}
+        </div>
+      ),
       features: [
         '💻 Wireframe design to code',
         '📱 Responsive design',
@@ -90,6 +76,7 @@ const data = [
     url: getURLs('pokemon-guesser'),
     id: 'pokemon-guesser',
     title: 'Pokemon Guesser',
+    badges: ['SASS', 'REACT', 'REDUX', 'API'],
     contents: {
       heading: (
         <>
@@ -97,13 +84,20 @@ const data = [
             href='https://pokeapi.co/'
             style={{ color: '#3366CC' }}
             target='_blank'
+            rel='noreferrer'
           >
             PokeAPI
           </a>{' '}
           project built with React & Redux.
         </>
       ),
-      desc: 'Pokemon Guesser is an API project where users can play a guess game. I made this website out of my interest in Pokemon. I wrote a code logic that questions might vary based on user answers. I implemented algorithms that narrow down the Pokemon until the only one is left.',
+      desc: (
+        <div className='ml-2'>
+          {overviews['pokemon'].map((desc, index) => {
+            return <div key={index}>{desc}</div>
+          })}
+        </div>
+      ),
       features: [
         '🕹️ Fetch API',
         '🎯 User selection filter',
@@ -126,29 +120,15 @@ const data = [
     url: getURLs('johnnyandco'),
     id: 'johnny-and-co',
     title: 'Johnny & Co.',
+    badges: ['MONGODB', 'EXPRESS', 'NODEJS', 'REACT', 'REDUX'],
     contents: {
       heading: 'eCommerce website built with MERN stack.',
       desc: (
-        <>
-          Johnny & Co. is an eCommerce website that I developed along with this{' '}
-          <a
-            href='https://www.udemy.com/course/mern-ecommerce/'
-            style={{ color: '#3366CC' }}
-            target='_blank'
-          >
-            Udemy course
-          </a>
-          . I gained better understanding of full stack development from this
-          hands-on project. I customized a design inspired by{' '}
-          <a
-            href='https://www.tiffany.com/'
-            style={{ color: '#3366CC' }}
-            target='_blank'
-          >
-            Tiffany & Co.
-          </a>{' '}
-          official website. I used Google Cloud Platform for hosting.
-        </>
+        <div className='ml-2'>
+          {overviews['johnnyandco'].map((desc, index) => {
+            return <div key={index}>{desc}</div>
+          })}
+        </div>
       ),
       alert: '📌 Admin page is available. (admin@example.com / 123456)',
       features: [
@@ -181,9 +161,16 @@ const data = [
     url: getURLs('neilkim'),
     id: 'neil-kim',
     title: 'Neil Kim',
+    badges: ['GODOT'],
     contents: {
       heading: '2D platformer game built with Godot game engine.',
-      desc: 'Neil Kim is an independent game that I developed and published online. I created this game to experience game development. I performed an entire process of game production including planning, designing, developing, testing, publishing and marketing.',
+      desc: (
+        <div className='ml-2'>
+          {overviews['neilkim'].map((desc, index) => {
+            return <div key={index}>{desc}</div>
+          })}
+        </div>
+      ),
       features: [
         '🧨 10 exclusive weapons',
         '🎮 21 levels',

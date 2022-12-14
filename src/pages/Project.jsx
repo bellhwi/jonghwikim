@@ -18,7 +18,6 @@ function Project() {
 
   useEffect(() => {
     document.title = `${title} - jonghwi kim`
-    window.scrollTo(0, 0)
   }, [])
 
   return (
@@ -86,9 +85,7 @@ function Project() {
         </div>
         <h4 className='modal-content-heading font-semibold'>OVERVIEW</h4>
         <hr className='mt-1' />
-        <p className='pt-2 text-gray-700 text-xs sm:text-sm ml-4'>
-          {contents.desc}
-        </p>
+        <p className='pt-2 text-gray-700 text-xs sm:text-sm'>{contents.desc}</p>
 
         <h4 className='modal-content-heading font-semibold mt-6'>FEATURES</h4>
         <hr className='mt-1' />

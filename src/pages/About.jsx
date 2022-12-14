@@ -8,7 +8,6 @@ function About() {
 
   useEffect(() => {
     document.title = 'About - jonghwi kim'
-    window.scrollTo(0, 0)
   }, [])
 
   return (
