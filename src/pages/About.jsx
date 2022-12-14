@@ -58,7 +58,7 @@ function About() {
         <div className='max-w-screen-sm w-4/5 mx-auto lg:w-full lg:m-0'>
           <img
             className='profile-img relative'
-            src={`${process.env.PUBLIC_URL}/images/jonghwikim.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/jonghwikim.webp`}
           />
         </div>
       </div>
