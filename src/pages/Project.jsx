@@ -107,7 +107,7 @@ function Project() {
         <p
           className='text-gray-700 cursor-pointer inline lg:pb-8 text-sm'
           onClick={() => {
-            navigate(-1)
+            navigate('/')
           }}
         >
           &lt; Back
