@@ -1,5 +1,6 @@
 import { techURLs } from './techs'
 import { overviews } from './overviews'
+import { RiMoneyDollarCircleLine } from 'react-icons/ri'
 
 const getURLs = (fileName) => {
   const urls = [...new Array(3).keys()].map((index) => {
@@ -14,7 +15,7 @@ const data = [
     url: getURLs('devlog'),
     title: 'Devlog',
     id: 'devlog',
-    badges: ['TYPESCRIPT', 'REACT', 'REDUX', 'NEXTJS', 'TAILWIND'],
+    badges: ['NEXTJS', 'TYPESCRIPT', 'REACT', 'REDUX', 'TAILWIND'],
     contents: {
       heading: 'Blog website built with NextJS & Typescript.',
       desc: (
@@ -31,10 +32,10 @@ const data = [
         '📱 Responsive design',
       ],
       techs: [
+        techURLs.nextjs,
         techURLs.typescript,
         techURLs.react,
         techURLs.redux,
-        techURLs.nextjs,
         techURLs.tailwind,
       ],
       github: 'https://github.com/bellhwi/devlog',
@@ -43,11 +44,17 @@ const data = [
   },
   {
     url: getURLs('haxa'),
-    title: 'Haxa',
+    title: (
+      <div className='flex items-center'>
+        <RiMoneyDollarCircleLine />
+        <p className='ml-0.5'>Haxa</p>
+      </div>
+    ),
     id: 'haxa',
     badges: ['REACT', 'REDUX', 'FIREBASE', 'SASS'],
     contents: {
-      heading: 'eCommerce website built with React & Firebase.',
+      heading:
+        "Entrepreneur client's eCommerce project built with React & Firebase.",
       desc: (
         <div className='ml-2'>
           {overviews['haxa'].map((desc, index) => {
@@ -81,10 +88,16 @@ const data = [
   {
     url: getURLs('arnid'),
     id: 'arnidxiong',
-    title: 'Arnid Xiong',
+    title: (
+      <div className='flex items-center'>
+        <RiMoneyDollarCircleLine />
+        <p className='ml-0.5'>Arnid Xiong</p>
+      </div>
+    ),
     badges: ['HTML', 'CSS'],
     contents: {
-      heading: 'Graphic design portfolio website built with HTML, CSS.',
+      heading:
+        "Graphic designer client's portfolio project built with HTML, CSS.",
       desc: (
         <div className='ml-2'>
           {overviews['arnid'].map((desc, index) => {

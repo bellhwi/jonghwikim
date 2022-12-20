@@ -26,7 +26,7 @@ function Project() {
       <Navbar />
       <div className='flex flex-col justify-center align-center w-10/12 lg:w-9/12 pt-10 mx-auto relative lg:left-16'>
         <div className='flex flex-col justify-between items-center sm:flex-row'>
-          <h1 className='text-4xl font-semibold pb-4'>{title}</h1>
+          <div className='text-4xl font-semibold pb-4'>{title}</div>
         </div>
         <p className='border-l-2 border-gray-300 text-gray-500 pl-2 mx-auto sm:ml-2'>
           {contents.heading}
