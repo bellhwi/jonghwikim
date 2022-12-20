@@ -1,4 +1,53 @@
 const overviews = {
+  devlog: [
+    <>
+      <h4 className='font-semibold'>How did I build it?</h4>
+      <p className='ml-2 mt-0.5'>
+        Devlog is an imitation website of{' '}
+        <a
+          href='https://velog.io/'
+          target='_blank'
+          rel='noreferrer'
+          style={{ color: '#3366CC' }}
+        >
+          velog
+        </a>
+        , the developer's blog. I'm currently studying how to use NextJS with
+        Typescript. I created this website to learn from hands-on project.
+      </p>
+    </>,
+    <>
+      <h4 className='font-semibold mt-3'>
+        What was the most challenging part?
+      </h4>
+      <p className='ml-2 mt-0.5'>
+        The most challenging part was learning the new routing system of NextJS.
+        I had to write code logics to get url params in order to fetch post data
+        locally. I used the 'useRouter' hook of NextJS to achieve that. This
+        code logic produced an pre-rendering type error that says I'm trying to
+        use undefined data. I had to figure out what was causing the issue.
+      </p>
+    </>,
+    <>
+      <h4 className='font-semibold mt-3'>How did you solve it?</h4>
+      <p className='ml-2 mt-0.5'>
+        The problem occurred since the Post component is trying to use the url
+        param before the page renders. I used the 'useEffect' hook to make the
+        code run only after rendering.
+      </p>
+    </>,
+    <>
+      <h4 className='font-semibold mt-3'>What was the most fun part?</h4>
+      <p className='ml-2 mt-0.5'>
+        The most fun part was the cool development experience. The way of how
+        React displays an error is showing white blank space only. Unlike that,
+        NextJS shows an error on the browser which makes it easier to debug the
+        code. The error log can be viewed in the terminal of the code editor, as
+        well. This feature saves a lot of time debugging compared to using the
+        developer's tool in the browser.
+      </p>
+    </>,
+  ],
   haxa: [
     <>
       <h4 className='font-semibold'>How did I build it?</h4>

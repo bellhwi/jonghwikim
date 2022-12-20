@@ -11,10 +11,41 @@ const getURLs = (fileName) => {
 
 const data = [
   {
+    url: getURLs('devlog'),
+    title: 'Devlog',
+    id: 'devlog',
+    badges: ['TYPESCRIPT', 'REACT', 'REDUX', 'NEXTJS', 'TAILWIND'],
+    contents: {
+      heading: 'Blog website built with NextJS & Typescript.',
+      desc: (
+        <div className='ml-2'>
+          {overviews['devlog'].map((desc, index) => {
+            return <div key={index}>{desc}</div>
+          })}
+        </div>
+      ),
+      features: [
+        '🔍 Search blog post',
+        '🗃️ Sort posts',
+        '🌗 Light / dark mode',
+        '📱 Responsive design',
+      ],
+      techs: [
+        techURLs.typescript,
+        techURLs.react,
+        techURLs.redux,
+        techURLs.nextjs,
+        techURLs.tailwind,
+      ],
+      github: 'https://github.com/bellhwi/devlog',
+      website: 'https://devlog-next.vercel.app/',
+    },
+  },
+  {
     url: getURLs('haxa'),
     title: 'Haxa',
     id: 'haxa',
-    badges: ['SASS', 'REACT', 'REDUX', 'FIREBASE'],
+    badges: ['REACT', 'REDUX', 'FIREBASE', 'SASS'],
     contents: {
       heading: 'eCommerce website built with React & Firebase.',
       desc: (

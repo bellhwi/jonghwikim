@@ -1,11 +1,13 @@
 import { useNavigate } from 'react-router-dom'
 import { data } from '../data'
 
-function Thumbnail({ url, index, width }) {
+function Thumbnail({ url, index, width, lgPadding }) {
   const navigate = useNavigate()
   return (
     <div
-      className='thumbnail relative cursor-pointer flex flex-col shadow-lg p-4'
+      className={`thumbnail relative cursor-pointer flex flex-col shadow-lg ${
+        lgPadding ? 'px-8 py-4' : 'p-4'
+      }`}
       onClick={() => {
         navigate(`/${data[index].id}`)
       }}
@@ -14,9 +16,6 @@ function Thumbnail({ url, index, width }) {
         src={url}
         draggable={false}
         className='mx-auto'
-        onClick={() => {
-          navigate(`/${data[index].id}`)
-        }}
         style={{ width: `${width}` }}
       />
       <div className='mt-2'>

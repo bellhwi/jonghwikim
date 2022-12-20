@@ -7,13 +7,16 @@
   color: $color;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .thumbnail {
-  filter: saturate(0.3);
   transition: all 0.5s;
 }
 
 .thumbnail:hover {
-  filter: saturate(1);
+  scale: 1.05;
 }
 
 .profile-img {
@@ -66,4 +69,13 @@
 }
 .API {
   @include badgeColor(#704b32);
+}
+.NEXTJS {
+  @include badgeColor((#757bc8));
+}
+.TYPESCRIPT {
+  @include badgeColor(#023e8a);
+}
+.TAILWIND {
+  @include badgeColor(#5bc0be);
 }

@@ -1,13 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  overflow-x: hidden;
+}
+
 .thumbnail {
-  filter: saturate(0.3);
   transition: all 0.5s;
 }
 
 .thumbnail:hover {
-  filter: saturate(1);
+  scale: 1.05;
 }
 
 .profile-img {
@@ -81,4 +84,19 @@
 .API {
   border: 1px solid #704b32;
   color: #704b32;
+}
+
+.NEXTJS {
+  border: 1px solid #757bc8;
+  color: #757bc8;
+}
+
+.TYPESCRIPT {
+  border: 1px solid #023e8a;
+  color: #023e8a;
+}
+
+.TAILWIND {
+  border: 1px solid #5bc0be;
+  color: #5bc0be;
 }/*# sourceMappingURL=index.css.map */
