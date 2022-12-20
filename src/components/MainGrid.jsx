@@ -7,7 +7,6 @@ function MainGrid() {
         url={`${process.env.PUBLIC_URL}/images/devlog.webp`}
         index={0}
         width='100%'
-        lgPadding
       />
       <Thumbnail
         url={`${process.env.PUBLIC_URL}/images/haxa.webp`}
