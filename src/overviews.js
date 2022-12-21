@@ -29,7 +29,7 @@ const overviews = {
       </p>
     </>,
     <>
-      <h4 className='font-semibold mt-3'>How did you solve it?</h4>
+      <h4 className='font-semibold mt-3'>How did I solve it?</h4>
       <p className='ml-2 mt-0.5'>
         The problem occurred since the Post component is trying to use the url
         param before the page renders. I used the 'useEffect' hook to make the
@@ -79,7 +79,7 @@ const overviews = {
       </p>
     </>,
     <>
-      <h4 className='font-semibold mt-3'>How did you solve it?</h4>
+      <h4 className='font-semibold mt-3'>How did I solve it?</h4>
       <p className='ml-2 mt-0.5'>
         I used Redux and the ‘useEffect’ hook in React to optimize data fetching
         logic. It stores data in a state after the component is rendered
@@ -120,7 +120,7 @@ const overviews = {
       </p>
     </>,
     <>
-      <h4 className='font-semibold mt-3'>How did you solve it?</h4>
+      <h4 className='font-semibold mt-3'>How did I solve it?</h4>
       <p className='ml-2 mt-0.5'>
         I used the CSS property 'aspect-ratio: 1;' to keep the 1:1 ratio of each
         image. I applied 'object-fit: cover;' to maintain its aspect ratio while
@@ -159,7 +159,7 @@ const overviews = {
       </p>
     </>,
     <>
-      <h4 className='font-semibold mt-3'>How did you solve it?</h4>
+      <h4 className='font-semibold mt-3'>How did I solve it?</h4>
       <p className='ml-2 mt-0.5'>
         I used the 'Filter' function of Javascript to find duplicates. After
         that, I used the 'Set' object to remove duplicates and leave only one. I
@@ -216,7 +216,7 @@ const overviews = {
       </p>
     </>,
     <>
-      <h4 className='font-semibold mt-3'>How did you solve it?</h4>
+      <h4 className='font-semibold mt-3'>How did I solve it?</h4>
       <p className='ml-2 mt-0.5'>
         I customized the website design and changed the sample products. While I
         applied a different look to the project, I could play around with the
@@ -263,7 +263,7 @@ const overviews = {
       </p>
     </>,
     <>
-      <h4 className='font-semibold mt-3'>How did you solve it?</h4>
+      <h4 className='font-semibold mt-3'>How did I solve it?</h4>
       <p className='ml-2 mt-0.5'>
         I found out that there are online stores that sell graphic assets
         including pixel-art. I bought graphic assets for my background. I used

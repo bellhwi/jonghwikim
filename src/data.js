@@ -1,6 +1,5 @@
 import { techURLs } from './techs'
 import { overviews } from './overviews'
-import { RiMoneyDollarCircleLine } from 'react-icons/ri'
 
 const getURLs = (fileName) => {
   const urls = [...new Array(3).keys()].map((index) => {
@@ -44,12 +43,7 @@ const data = [
   },
   {
     url: getURLs('haxa'),
-    title: (
-      <div className='flex items-center'>
-        <RiMoneyDollarCircleLine />
-        <p className='ml-0.5'>Haxa</p>
-      </div>
-    ),
+    title: 'Client project: Haxa',
     id: 'haxa',
     badges: ['REACT', 'REDUX', 'FIREBASE', 'SASS'],
     contents: {
@@ -88,12 +82,7 @@ const data = [
   {
     url: getURLs('arnid'),
     id: 'arnidxiong',
-    title: (
-      <div className='flex items-center'>
-        <RiMoneyDollarCircleLine />
-        <p className='ml-0.5'>Arnid Xiong</p>
-      </div>
-    ),
+    title: 'Client project: Arnid Xiong',
     badges: ['HTML', 'CSS'],
     contents: {
       heading:
