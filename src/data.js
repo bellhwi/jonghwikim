@@ -48,7 +48,7 @@ const data = [
     badges: ['REACT', 'REDUX', 'FIREBASE', 'SASS'],
     contents: {
       heading:
-        "Entrepreneur client's eCommerce project built with React & Firebase.",
+        'eCommerce project built with React & Firebase for my entrepreneur client.',
       desc: (
         <div className='ml-2'>
           {overviews['haxa'].map((desc, index) => {
@@ -86,7 +86,7 @@ const data = [
     badges: ['HTML', 'CSS'],
     contents: {
       heading:
-        "Graphic designer client's portfolio project built with HTML, CSS.",
+        'Portfolio website built with HTML and CSS for my graphic designer client.',
       desc: (
         <div className='ml-2'>
           {overviews['arnid'].map((desc, index) => {
