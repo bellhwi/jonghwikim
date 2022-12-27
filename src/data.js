@@ -56,8 +56,14 @@ const data = [
           })}
         </div>
       ),
-      alert:
-        '📌 Admin page is accessible by clicking the copyright text at footer. (admin@example.com / 123456)',
+      alert: (
+        <div className='flex flex-col items-start'>
+          <p className='font-semibold'>
+            Admin page is accessible by clicking the copyright text at footer!
+          </p>
+          <p>admin@example.com / 123456</p>
+        </div>
+      ),
       features: [
         '🧑🏻‍💻 User authentication',
         '🔍 Search product',
@@ -163,7 +169,12 @@ const data = [
           })}
         </div>
       ),
-      alert: '📌 Admin page is available. (admin@example.com / 123456)',
+      alert: (
+        <div className='flex flex-col items-start'>
+          <p className='font-semibold'>Admin page is available!</p>
+          <p>admin@example.com / 123456</p>
+        </div>
+      ),
       features: [
         '🧑🏻‍💼 Admin product management',
         '👨‍👩‍👦 Admin user management',

@@ -20,11 +20,12 @@ function About() {
           </h2>
           <br></br>
           <p className='text-xs sm:text-sm text-gray-600'>
-            I have 3+ years overall experience in software development and
-            testing. I've been freelancing at Upwork for a recent year. I've
-            created eCommerce and portfolio websites for clients. I'm currently
-            looking for React Frontend Developer job position. Below are my
-            specialties,
+            I got into the front end work and design ever since I created a
+            portfolio website for one of my clients. I learned that web
+            development skills can solve someone's problem. From there, I'm
+            pursuing my vision to offer valuable web application service to
+            people. I'm currently looking for React Frontend Developer job
+            position. Below are my specialties,
           </p>
           <br></br>
           <ul className='text-xs sm:text-sm text-gray-600 ml-4 list-disc'>

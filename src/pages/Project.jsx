@@ -6,6 +6,7 @@ import { data } from '../data'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation, Autoplay } from 'swiper'
+import { AiOutlineExclamationCircle } from 'react-icons/ai'
 
 function Project() {
   const maxWidth = useSelector((state) => state.maxWidth)
@@ -54,9 +55,12 @@ function Project() {
           ) : null}
         </div>
         {contents.alert && (
-          <small className='text-sm sm:text-md mt-4 bg-slate-300 p-2 text-center'>
+          <div className='text-sm sm:text-md mt-4 bg-amber-100 p-3 text-center border-l-2 border-amber-500 text-amber-900 flex items-start'>
+            <span className='inline-block text-amber-500 text-xl pr-2'>
+              <AiOutlineExclamationCircle />
+            </span>
             {contents.alert}
-          </small>
+          </div>
         )}
         <div className='w-full mt-6 mb-6'>
           <Swiper
