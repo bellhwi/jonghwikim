@@ -32,14 +32,6 @@ function Navbar() {
         >
           Projects
         </NavLink>
-        <a
-          href='https://docs.google.com/document/d/1cCmYlvT7zN1VVJ4X7mH-5sxntNe4PvYZ5K1fgKZWyMg/edit'
-          target='_blank'
-          rel='noreferrer'
-          className='no-underline'
-        >
-          Docs
-        </a>
 
         <NavLink
           to='/about'

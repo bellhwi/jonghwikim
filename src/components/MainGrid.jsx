@@ -14,26 +14,20 @@ function MainGrid() {
         width='75%'
       />
       <Thumbnail
-        url={`${process.env.PUBLIC_URL}/images/arnid.webp`}
-        index={2}
-        width='80%'
-      />
-      <Thumbnail
         url={`${process.env.PUBLIC_URL}/images/pokemon-guesser.webp`}
-        index={3}
+        index={2}
         width='45%'
       />
-      <Thumbnail
-        url={`${process.env.PUBLIC_URL}/images/johnnyandco.webp`}
-        index={4}
-        width='35%'
-      />
-
-      <Thumbnail
-        url={`${process.env.PUBLIC_URL}/images/neilkim.webp`}
-        index={5}
-        width='80%'
-      />
+      <div className='flex justify-center mt-8'>
+        <a
+          className='btn text-sm rounded-none border border-black bg-transparent text-black hover:bg-transparent w-1/2 sm:w-3/4 lg:w-1/2'
+          href='https://github.com/bellhwi'
+          target='_blank'
+          rel='noreferrer'
+        >
+          view more on github
+        </a>
+      </div>
     </div>
   )
 }

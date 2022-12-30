@@ -6,14 +6,6 @@ body {
   border-top: #0057b8 solid 5px;
 }
 
-.thumbnail {
-  transition: all 0.5s;
-}
-
-.thumbnail:hover {
-  scale: 1.05;
-}
-
 .profile-img {
   filter: grayscale(100%) brightness(120%);
 }

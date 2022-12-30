@@ -39,7 +39,7 @@ function About() {
           </ul>
           <div className='flex mt-12'>
             <a
-              className='btn text-xs sm:text-sm rounded-none border border-black bg-transparent text-black hover:bg-transparent '
+              className='btn text-xs sm:text-sm rounded-none border border-black bg-transparent text-black hover:bg-transparent'
               href='https://docs.google.com/document/d/1-X1DLL1w5mDYhfPo5MGjhvFamdA_74ZJt8DEc71j2pw/edit?usp=sharing'
               target='_blank'
               rel='noreferrer'

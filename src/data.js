@@ -1,5 +1,6 @@
 import { techURLs } from './techs'
 import { overviews } from './overviews'
+import { technicalDecision } from './technicalDecision'
 
 const getURLs = (fileName) => {
   const urls = [...new Array(3).keys()].map((index) => {
@@ -24,11 +25,49 @@ const data = [
           })}
         </div>
       ),
+      technicalDecision: (
+        <div className='ml-2'>
+          {technicalDecision['devlog'].map((desc, index) => {
+            return <div key={index}>{desc}</div>
+          })}
+        </div>
+      ),
       features: [
-        '🔍 Search blog post',
-        '🗃️ Sort posts',
-        '🌗 Light / dark mode',
-        '📱 Responsive design',
+        <p>
+          🌗 Light / dark mode:{' '}
+          <a
+            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+        <p>
+          🔍 Search blog post:{' '}
+          <a
+            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+        <p>
+          🗃️ Sort posts:{' '}
+          <a
+            href='https://github.com/bellhwi/devlog/blob/main/components/Sort.tsx'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+
+        <p>📱 Responsive design</p>,
       ],
       techs: [
         techURLs.nextjs,
@@ -43,7 +82,7 @@ const data = [
   },
   {
     url: getURLs('haxa'),
-    title: 'Client project: Haxa',
+    title: 'Haxa',
     id: 'haxa',
     badges: ['REACT', 'REDUX', 'FIREBASE', 'SASS'],
     contents: {
@@ -56,21 +95,57 @@ const data = [
           })}
         </div>
       ),
-      alert: (
-        <div className='flex flex-col items-start'>
-          <p className='font-semibold'>
-            Admin page is accessible by clicking the copyright text at footer!
-          </p>
-          <p>admin@example.com / 123456</p>
+      technicalDecision: (
+        <div className='ml-2'>
+          {technicalDecision['haxa'].map((desc, index) => {
+            return <div key={index}>{desc}</div>
+          })}
         </div>
       ),
+      alert: (
+        <p className='font-semibold'>
+          Admin page is accessible by clicking the copyright text at footer!
+          (admin@example.com / 123456)
+        </p>
+      ),
       features: [
-        '🧑🏻‍💻 User authentication',
-        '🔍 Search product',
-        '🧑🏻‍💼 Admin product management',
-        '🎯 Filter / sort product',
-        '💳 PayPal integration',
-        '✨ Live inventory',
+        <p>
+          🧑🏻‍💼 Admin product management:{' '}
+          <a
+            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+        <p>
+          🧑🏻‍💻 User authentication:{' '}
+          <a
+            href='https://github.com/bellhwi/devlog/blob/main/components/Sort.tsx'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+        <p>
+          🎯 Filter / sort product:{' '}
+          <a
+            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+        <p>💳 PayPal integration</p>,
+        <p>🔍 Search product</p>,
+        <p>✨ Live inventory</p>,
+        <p>📱 Responsive design</p>,
       ],
       techs: [
         techURLs.html,
@@ -83,32 +158,6 @@ const data = [
       ],
       github: 'https://github.com/bellhwi/haxa',
       website: 'https://haxalabs.com/',
-    },
-  },
-  {
-    url: getURLs('arnid'),
-    id: 'arnidxiong',
-    title: 'Client project: Arnid Xiong',
-    badges: ['HTML', 'CSS'],
-    contents: {
-      heading:
-        'Portfolio website built with HTML and CSS for my graphic designer client.',
-      desc: (
-        <div className='ml-2'>
-          {overviews['arnid'].map((desc, index) => {
-            return <div key={index}>{desc}</div>
-          })}
-        </div>
-      ),
-      features: [
-        '💻 Wireframe design to code',
-        '📱 Responsive design',
-        '🎨 Design with pure CSS',
-        '🧭 See more navigation',
-      ],
-      techs: [techURLs.html, techURLs.css],
-      github: 'https://github.com/bellhwi/ArnidXiong',
-      website: 'https://arnidxiong.co/',
     },
   },
   {
@@ -137,11 +186,51 @@ const data = [
           })}
         </div>
       ),
+      technicalDecision: (
+        <div className='ml-2'>
+          {technicalDecision['pokemon'].map((desc, index) => {
+            return <div key={index}>{desc}</div>
+          })}
+        </div>
+      ),
       features: [
-        '🕹️ Fetch API',
-        '🎯 User selection filter',
-        '🤖 Different question algorithm by user response',
-        '🚫 Not found page',
+        <p>
+          🤖 Different question algorithm by user response:{' '}
+          <a
+            href='https://github.com/bellhwi/pokemon-guesser/blob/main/src/components/FirstCharacter.jsx'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+        <p>
+          🎯 User selection filter:{' '}
+          <a
+            href='https://github.com/bellhwi/pokemon-guesser/blob/main/src/components/Letter.jsx'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+
+        <p>
+          🕹️{' '}
+          <a
+            href='https://pokeapi.co/'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            PokeAPI
+          </a>{' '}
+          project
+        </p>,
+        <p>🚫 Not found page</p>,
+        <p>📱 Responsive design</p>,
       ],
       techs: [
         techURLs.html,
@@ -153,77 +242,6 @@ const data = [
       ],
       github: 'https://github.com/bellhwi/pokemon-guesser',
       website: 'https://pokemon-guesser.netlify.app/',
-    },
-  },
-  {
-    url: getURLs('johnnyandco'),
-    id: 'johnny-and-co',
-    title: 'Johnny & Co.',
-    badges: ['MONGODB', 'EXPRESS', 'NODEJS', 'REACT', 'REDUX'],
-    contents: {
-      heading: 'eCommerce website built with MERN stack.',
-      desc: (
-        <div className='ml-2'>
-          {overviews['johnnyandco'].map((desc, index) => {
-            return <div key={index}>{desc}</div>
-          })}
-        </div>
-      ),
-      alert: (
-        <div className='flex flex-col items-start'>
-          <p className='font-semibold'>Admin page is available!</p>
-          <p>admin@example.com / 123456</p>
-        </div>
-      ),
-      features: [
-        '🧑🏻‍💼 Admin product management',
-        '👨‍👩‍👦 Admin user management',
-        '🎁 Admin order management',
-        '💳 PayPal / credit card integration',
-        '⭐️ Product reviews / ratings',
-        '🔍 Search product',
-        '🛒 Shopping cart',
-        '👩🏻 User profile with orders',
-        '🚚 Checkout process (shipping, payment method, etc.)',
-      ],
-      techs: [
-        techURLs.html,
-        techURLs.css,
-        techURLs.javascript,
-        techURLs.react,
-        techURLs.redux,
-        techURLs.nodejs,
-        techURLs.mongodb,
-        techURLs.express,
-        techURLs.gcloud,
-      ],
-      github: 'https://github.com/bellhwi/johnnyandco',
-      website: 'https://johnnyandco.uc.r.appspot.com/',
-    },
-  },
-  {
-    url: getURLs('neilkim'),
-    id: 'neil-kim',
-    title: 'Neil Kim',
-    badges: ['GODOT'],
-    contents: {
-      heading: '2D platformer game built with Godot game engine.',
-      desc: (
-        <div className='ml-2'>
-          {overviews['neilkim'].map((desc, index) => {
-            return <div key={index}>{desc}</div>
-          })}
-        </div>
-      ),
-      features: [
-        '🧨 10 exclusive weapons',
-        '🎮 21 levels',
-        '👾 37 miscellaneous enemy abilities',
-        '🚨 Various difficulty mechanics by detection status',
-        '📘 Unique storyline through collectible items',
-      ],
-      techs: [techURLs.godot],
-      website: 'https://jonghwikim.itch.io/neil-kim',
     },
   },
 ]

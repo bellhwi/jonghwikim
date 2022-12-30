@@ -54,14 +54,7 @@ function Project() {
             </a>
           ) : null}
         </div>
-        {contents.alert && (
-          <div className='text-sm sm:text-md mt-4 bg-amber-100 p-3 text-center border-l-2 border-amber-500 text-amber-900 flex items-start'>
-            <span className='inline-block text-amber-500 text-xl pr-2'>
-              <AiOutlineExclamationCircle />
-            </span>
-            {contents.alert}
-          </div>
-        )}
+
         <div className='w-full mt-6 mb-6'>
           <Swiper
             slidesPerView={1}
@@ -88,9 +81,27 @@ function Project() {
             })}
           </Swiper>
         </div>
+        {contents.alert && (
+          <div className='text-sm sm:text-md mb-4 bg-amber-100 p-3 text-center border-l-2 border-amber-500 text-amber-900 flex justify-center'>
+            <span className='inline-block text-amber-500 text-xl pr-2'>
+              <AiOutlineExclamationCircle />
+            </span>
+            {contents.alert}
+          </div>
+        )}
         <h4 className='modal-content-heading font-semibold'>OVERVIEW</h4>
         <hr className='mt-1' />
-        <p className='pt-2 text-gray-700 text-xs sm:text-sm'>{contents.desc}</p>
+        <div className='pt-2 text-gray-700 text-xs sm:text-sm'>
+          {contents.desc}
+        </div>
+
+        <h4 className='modal-content-heading font-semibold mt-6'>
+          Technical Decision
+        </h4>
+        <hr className='mt-1' />
+        <ul className='list-disc text-gray-700 text-xs sm:text-sm pl-4'>
+          {contents.technicalDecision}
+        </ul>
 
         <h4 className='modal-content-heading font-semibold mt-6'>FEATURES</h4>
         <hr className='mt-1' />
