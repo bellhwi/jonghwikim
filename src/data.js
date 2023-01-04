@@ -36,7 +36,7 @@ const data = [
         <p>
           🌗 Light / dark mode:{' '}
           <a
-            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx'
+            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx#L79-L87'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -47,7 +47,7 @@ const data = [
         <p>
           🔍 Search blog post:{' '}
           <a
-            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx'
+            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx#L54-L72'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -58,7 +58,7 @@ const data = [
         <p>
           🗃️ Sort posts:{' '}
           <a
-            href='https://github.com/bellhwi/devlog/blob/main/components/Sort.tsx'
+            href='https://github.com/bellhwi/devlog/blob/main/components/Sort.tsx#L8-L25'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -112,7 +112,7 @@ const data = [
         <p>
           🧑🏻‍💼 Admin product management:{' '}
           <a
-            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx'
+            href='https://github.com/bellhwi/haxa/blob/main/src/pages/Edit.jsx#L86-L139'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -123,7 +123,7 @@ const data = [
         <p>
           🧑🏻‍💻 User authentication:{' '}
           <a
-            href='https://github.com/bellhwi/devlog/blob/main/components/Sort.tsx'
+            href='https://github.com/bellhwi/haxa/blob/main/src/pages/Login.jsx#L61-L86'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -134,7 +134,7 @@ const data = [
         <p>
           🎯 Filter / sort product:{' '}
           <a
-            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx'
+            href='https://github.com/bellhwi/haxa/blob/main/src/components/Products.jsx#L25-L73'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -197,7 +197,7 @@ const data = [
         <p>
           🤖 Different question algorithm by user response:{' '}
           <a
-            href='https://github.com/bellhwi/pokemon-guesser/blob/main/src/components/FirstCharacter.jsx'
+            href='https://github.com/bellhwi/pokemon-guesser/blob/main/src/components/FirstCharacter.jsx#L80-L105'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -208,7 +208,7 @@ const data = [
         <p>
           🎯 User selection filter:{' '}
           <a
-            href='https://github.com/bellhwi/pokemon-guesser/blob/main/src/components/Letter.jsx'
+            href='https://github.com/bellhwi/pokemon-guesser/blob/main/src/components/Letter.jsx#L29-L43'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
