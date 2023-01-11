@@ -21,7 +21,7 @@ function Footer() {
           <FaLinkedinIn />
         </a>
         <a
-          href='https://www.youtube.com/channel/UCMDLPQ99Hp5o-ri25xYd0mA'
+          href='https://www.youtube.com/@jonghwikim'
           target='_blank'
           rel='noreferrer'
           className='hover:text-black'

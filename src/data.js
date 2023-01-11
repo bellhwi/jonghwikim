@@ -12,31 +12,44 @@ const getURLs = (fileName) => {
 
 const data = [
   {
-    url: getURLs('devlog'),
-    title: 'Devlog',
-    id: 'devlog',
-    badges: ['NEXTJS', 'TYPESCRIPT', 'REACT', 'REDUX', 'TAILWIND'],
+    url: getURLs('prolog'),
+    title: 'Prolog',
+    id: 'prolog',
+    badges: ['TYPESCRIPT', 'NEXTJS', 'REACT', 'CYPRESS', 'STORYBOOK'],
     contents: {
-      heading: 'Blog website built with NextJS & Typescript.',
+      heading: (
+        <p>
+          Error tracking tool that built on codebase during the{' '}
+          <a
+            href='https://profy.dev/'
+            style={{ color: '#3366CC' }}
+            target='_blank'
+            rel='noreferrer'
+          >
+            React Job Simulator Program
+          </a>
+          .
+        </p>
+      ),
       desc: (
         <div className='ml-2'>
-          {overviews['devlog'].map((desc, index) => {
+          {overviews['prolog'].map((desc, index) => {
             return <div key={index}>{desc}</div>
           })}
         </div>
       ),
       technicalDecision: (
         <div className='ml-2'>
-          {technicalDecision['devlog'].map((desc, index) => {
+          {technicalDecision['prolog'].map((desc, index) => {
             return <div key={index}>{desc}</div>
           })}
         </div>
       ),
       features: [
         <p>
-          🌗 Light / dark mode:{' '}
+          📄 Project list with summary:{' '}
           <a
-            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx#L79-L87'
+            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/projects/components/project-list/project-list.tsx#L70-L111'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -45,9 +58,9 @@ const data = [
           </a>
         </p>,
         <p>
-          🔍 Search blog post:{' '}
+          📫 REST API interaction:{' '}
           <a
-            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx#L54-L72'
+            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/projects/api/use-projects.tsx'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -56,9 +69,9 @@ const data = [
           </a>
         </p>,
         <p>
-          🗃️ Sort posts:{' '}
+          📋 Issue list table :{' '}
           <a
-            href='https://github.com/bellhwi/devlog/blob/main/components/Sort.tsx#L8-L25'
+            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/issues/components/issue-list/issue-list.tsx#L65-L143'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -66,18 +79,22 @@ const data = [
             Example code
           </a>
         </p>,
-
         <p>📱 Responsive design</p>,
       ],
       techs: [
-        techURLs.nextjs,
         techURLs.typescript,
+        techURLs.nextjs,
         techURLs.react,
-        techURLs.redux,
-        techURLs.tailwind,
+        techURLs.reactquery,
+        techURLs.styledcomponents,
+        techURLs.cypress,
+        techURLs.jest,
+        techURLs.storybook,
+        techURLs.eslint,
+        techURLs.prettier,
       ],
-      github: 'https://github.com/bellhwi/devlog',
-      website: 'https://devlog-next.vercel.app/',
+      github: 'https://github.com/profydev/prolog-app-bellhwi',
+      website: 'https://prolog-react.vercel.app/dashboard',
     },
   },
   {
@@ -161,43 +178,31 @@ const data = [
     },
   },
   {
-    url: getURLs('pokemon-guesser'),
-    id: 'pokemon-guesser',
-    title: 'Pokemon Guesser',
-    badges: ['SASS', 'REACT', 'REDUX', 'API'],
+    url: getURLs('devlog'),
+    title: 'Devlog',
+    id: 'devlog',
+    badges: ['TYPESCRIPT', 'NEXTJS', 'REACT', 'REDUX', 'TAILWIND'],
     contents: {
-      heading: (
-        <>
-          <a
-            href='https://pokeapi.co/'
-            style={{ color: '#3366CC' }}
-            target='_blank'
-            rel='noreferrer'
-          >
-            PokeAPI
-          </a>{' '}
-          project built with React & Redux.
-        </>
-      ),
+      heading: 'Blog website built with NextJS & TypeScript.',
       desc: (
         <div className='ml-2'>
-          {overviews['pokemon'].map((desc, index) => {
+          {overviews['devlog'].map((desc, index) => {
             return <div key={index}>{desc}</div>
           })}
         </div>
       ),
       technicalDecision: (
         <div className='ml-2'>
-          {technicalDecision['pokemon'].map((desc, index) => {
+          {technicalDecision['devlog'].map((desc, index) => {
             return <div key={index}>{desc}</div>
           })}
         </div>
       ),
       features: [
         <p>
-          🤖 Different question algorithm by user response:{' '}
+          🌗 Light / dark mode:{' '}
           <a
-            href='https://github.com/bellhwi/pokemon-guesser/blob/main/src/components/FirstCharacter.jsx#L80-L105'
+            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx#L79-L87'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -206,9 +211,20 @@ const data = [
           </a>
         </p>,
         <p>
-          🎯 User selection filter:{' '}
+          🔍 Search blog post:{' '}
           <a
-            href='https://github.com/bellhwi/pokemon-guesser/blob/main/src/components/Letter.jsx#L29-L43'
+            href='https://github.com/bellhwi/devlog/blob/main/components/Navbar.tsx#L54-L72'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+        <p>
+          🗃️ Sort posts:{' '}
+          <a
+            href='https://github.com/bellhwi/devlog/blob/main/components/Sort.tsx#L8-L25'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -217,31 +233,17 @@ const data = [
           </a>
         </p>,
 
-        <p>
-          🕹️{' '}
-          <a
-            href='https://pokeapi.co/'
-            target='_blank'
-            rel='noreferrer'
-            style={{ color: '#3366CC' }}
-          >
-            PokeAPI
-          </a>{' '}
-          project
-        </p>,
-        <p>🚫 Not found page</p>,
         <p>📱 Responsive design</p>,
       ],
       techs: [
-        techURLs.html,
-        techURLs.css,
-        techURLs.javascript,
-        techURLs.sass,
+        techURLs.nextjs,
+        techURLs.typescript,
         techURLs.react,
         techURLs.redux,
+        techURLs.tailwind,
       ],
-      github: 'https://github.com/bellhwi/pokemon-guesser',
-      website: 'https://pokemon-guesser.netlify.app/',
+      github: 'https://github.com/bellhwi/devlog',
+      website: 'https://devlog-next.vercel.app/',
     },
   },
 ]

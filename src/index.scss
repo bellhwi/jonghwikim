@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+$primary-color: #0057b8;
+$secondary-color: #d3d3d3;
+
 @mixin badgeColor($color) {
   border: 1px solid $color;
   color: $color;
@@ -9,7 +12,7 @@
 
 body {
   overflow-x: hidden;
-  border-top: #0057b8 solid 5px;
+  border-top: $primary-color solid 5px;
 }
 
 .profile-img {
@@ -29,8 +32,14 @@ body {
   font-size: 0.5rem !important;
 }
 
+.code-block {
+  background-color: $secondary-color;
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
 /* Badge Color */
-.HTML {
+.STORYBOOK {
   @include badgeColor((#e87d27));
 }
 .CSS {
@@ -51,7 +60,7 @@ body {
 .NODEJS {
   @include badgeColor(#c9a227);
 }
-.GODOT {
+.CYPRESS {
   @include badgeColor(#6c757d);
 }
 .REDUX {

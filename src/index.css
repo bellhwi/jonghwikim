@@ -23,8 +23,14 @@ body {
   font-size: 0.5rem !important;
 }
 
+.code-block {
+  background-color: #d3d3d3;
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
 /* Badge Color */
-.HTML {
+.STORYBOOK {
   border: 1px solid #e87d27;
   color: #e87d27;
 }
@@ -59,7 +65,7 @@ body {
   color: #c9a227;
 }
 
-.GODOT {
+.CYPRESS {
   border: 1px solid #6c757d;
   color: #6c757d;
 }

@@ -1,4 +1,73 @@
 const technicalDecision = {
+  prolog: [
+    <>
+      <li className='mt-2'>
+        I used the Chrome extension to build a pixel-perfect app:{' '}
+        <a
+          href='https://drive.google.com/file/d/1V_wImhnv64S4_ImhFqRWkt5yoZfD3jhi/view?usp=share_link'
+          target='_blank'
+          rel='noreferrer'
+          style={{ color: '#3366CC' }}
+        >
+          Screenshot of example
+        </a>
+      </li>
+      <li className='mt-2'>
+        I built this app based on Figma designs:{' '}
+        <a
+          href='https://drive.google.com/file/d/1jyJL0gDE5DfPBqrIsIhIubd7qItLyAan/view?usp=share_link'
+          target='_blank'
+          rel='noreferrer'
+          style={{ color: '#3366CC' }}
+        >
+          Screenshot of designs
+        </a>
+      </li>
+      <li className='mt-2'>
+        I worked with tasks on a Kanban board:{' '}
+        <a
+          href='https://drive.google.com/file/d/1Fu3ZetCPHR_GE17qf0hz2myJHPJEgT-9/view?usp=share_link'
+          target='_blank'
+          rel='noreferrer'
+          style={{ color: '#3366CC' }}
+        >
+          Screenshot of tasks
+        </a>
+      </li>
+
+      <li className='mt-2'>
+        I used feature branches and Pull Requests:{' '}
+        <a
+          href='https://github.com/profydev/prolog-app-bellhwi/pull/1'
+          target='_blank'
+          rel='noreferrer'
+          style={{ color: '#3366CC' }}
+        >
+          Example PR
+        </a>
+      </li>
+    </>,
+  ],
+
+  haxa: [
+    <>
+      <li className='mt-2'>
+        I used ReactJS on purpose for one of the features in the project. My
+        client required a filter that showed the products without page
+        reloading.
+      </li>
+      <li className='mt-2'>
+        I used Redux to optimize the data fetching logic. It lets me manage
+        global states in an easier and more intuitive way as well.
+      </li>
+      <li className='mt-2'>
+        My goal is to become a full-stack developer ultimately. However I want
+        to focus on the frontend for now. That's why I decided to use Firebase
+        rather than create a custom server. I have basic backend knowledge in
+        NodeJS, Express, MongoDB, and MySQL.
+      </li>
+    </>,
+  ],
   devlog: [
     <>
       <li className='mt-2'>
@@ -23,56 +92,6 @@ const technicalDecision = {
           velog
         </a>
         .
-      </li>
-    </>,
-  ],
-  haxa: [
-    <>
-      <li className='mt-2'>
-        I used ReactJS on purpose for one of the features in the project. My
-        client required a filter that showed the products without page
-        reloading.
-      </li>
-      <li className='mt-2'>
-        I used Redux to optimize the data fetching logic. It lets me manage
-        global states in an easier and more intuitive way as well.
-      </li>
-      <li className='mt-2'>
-        My goal is to become a full-stack developer ultimately. However I want
-        to focus on the frontend for now. That's why I decided to use Firebase
-        rather than create a custom server. I have basic backend knowledge in
-        NodeJS, Express, MongoDB, and MySQL.
-      </li>
-    </>,
-  ],
-
-  pokemon: [
-    <>
-      <li className='mt-2'>
-        I separated two different fetch API logic to ‘onClick’ and ‘onChange’ on
-        purpose. The ‘onChange’ is to fetch the data for the next question. The
-        ‘onClick’ is to fetch the corresponding data based on the user’s
-        selection. That way I could reduce the delay between page loading.{' '}
-        <a
-          href='https://github.com/bellhwi/pokemon-guesser/blob/main/src/components/Color.jsx'
-          target='_blank'
-          rel='noreferrer'
-          style={{ color: '#3366CC' }}
-        >
-          Example code
-        </a>
-      </li>
-      <li className='mt-2'>
-        I used Sass to write the CSS code more efficiently. I could reduce
-        repetitive code by using mixin syntax in Sass.{' '}
-        <a
-          href='https://github.com/bellhwi/pokemon-guesser/blob/main/src/App.scss'
-          target='_blank'
-          rel='noreferrer'
-          style={{ color: '#3366CC' }}
-        >
-          Example code
-        </a>
       </li>
     </>,
   ],
