@@ -13,7 +13,7 @@ const getURLs = (fileName) => {
 const data = [
   {
     url: getURLs('prolog'),
-    title: 'Prolog',
+    title: 'ProLog',
     id: 'prolog',
     badges: ['TYPESCRIPT', 'NEXTJS', 'REACT', 'CYPRESS', 'STORYBOOK'],
     contents: {

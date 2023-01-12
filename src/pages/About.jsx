@@ -40,7 +40,7 @@ function About() {
           <div className='flex mt-12'>
             <a
               className='btn text-xs sm:text-sm rounded-none border border-black bg-transparent text-black hover:bg-transparent'
-              href='https://docs.google.com/document/d/1-X1DLL1w5mDYhfPo5MGjhvFamdA_74ZJt8DEc71j2pw/edit?usp=sharing'
+              href='https://docs.google.com/document/d/1sb04-iGHiQJpp8Cfb_CJ_IknxdDJvcF5v5schEDJLeQ/edit?usp=share_link'
               target='_blank'
               rel='noreferrer'
             >
@@ -60,6 +60,7 @@ function About() {
           <img
             className='profile-img relative'
             src={`${process.env.PUBLIC_URL}/images/jonghwikim.webp`}
+            alt='profileImage'
           />
         </div>
       </div>

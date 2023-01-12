@@ -3,7 +3,7 @@ const overviews = {
     <>
       <h4 className='font-semibold'>How did I build it?</h4>
       <p className='ml-2 mt-0.5'>
-        Prolog is the error tracking tool that was built on codebase during the{' '}
+        ProLog is the error tracking tool that was built on codebase during the{' '}
         <a
           href='https://profy.dev/'
           style={{ color: '#3366CC' }}
