@@ -47,7 +47,7 @@ const data = [
       ),
       features: [
         <p>
-          📄 Project list with summary:{' '}
+          📄 Project list:{' '}
           <a
             href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/projects/components/project-list/project-list.tsx#L70-L111'
             target='_blank'
@@ -60,7 +60,7 @@ const data = [
         <p>
           📫 REST API interaction:{' '}
           <a
-            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/projects/api/use-projects.tsx'
+            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/api/issues.ts'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -69,9 +69,9 @@ const data = [
           </a>
         </p>,
         <p>
-          📋 Issue list table :{' '}
+          📋 Issue list table:{' '}
           <a
-            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/issues/components/issue-list/issue-list.tsx#L65-L143'
+            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/issues/components/issue-list/issue-list.tsx#L89-L184'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -79,7 +79,28 @@ const data = [
             Example code
           </a>
         </p>,
-        <p>📱 Responsive design</p>,
+        <p>
+          🔬 Test with Cypress:{' '}
+          <a
+            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/cypress/e2e/issue-list.cy.ts'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+        <p>
+          📱 Ui kit:{' '}
+          <a
+            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/ui/button/button.stories.tsx'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
       ],
       techs: [
         techURLs.typescript,
@@ -104,7 +125,7 @@ const data = [
     badges: ['REACT', 'REDUX', 'FIREBASE', 'SASS'],
     contents: {
       heading:
-        'eCommerce project built with React & Firebase for my entrepreneur client.',
+        'Freelance e-commerce project built with React for my entrepreneur client.',
       desc: (
         <div className='ml-2'>
           {overviews['haxa'].map((desc, index) => {

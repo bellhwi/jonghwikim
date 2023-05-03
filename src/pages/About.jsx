@@ -15,17 +15,15 @@ function About() {
       <Navbar />
       <div className='profile flex justify-center align-center flex-col-reverse lg:flex-row w-10/12 lg:w-9/12 lg:pt-16 pt-10 mx-auto relative lg:justify-between'>
         <div className='profile-info lg:pr-10 lg:w-1/2 pt-8 lg:pt-0'>
-          <h2 className='text-sm font-bold'>
-            Hi, I'm Jonghwi from South Korea.
-          </h2>
+          <h2 className='text-sm font-bold'>Hi, I am Jonghwi.</h2>
           <br></br>
           <p className='text-xs sm:text-sm text-gray-600'>
             I got into the front end work and design ever since I created a
             portfolio website for one of my clients. I learned that web
-            development skills can solve someone's problem. From there, I'm
+            development skills can solve someone's problem. From there, I am
             pursuing my vision to offer valuable web application service to
-            people. I'm currently looking for React Frontend Developer job
-            position. Below are my specialties,
+            people. I am currently living in California and looking for React
+            Frontend Developer job position. Below are my specialties,
           </p>
           <br></br>
           <ul className='text-xs sm:text-sm text-gray-600 ml-4 list-disc'>
