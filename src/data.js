@@ -47,31 +47,9 @@ const data = [
       ),
       features: [
         <p>
-          📄 Project list:{' '}
-          <a
-            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/projects/components/project-list/project-list.tsx#L70-L111'
-            target='_blank'
-            rel='noreferrer'
-            style={{ color: '#3366CC' }}
-          >
-            Example code
-          </a>
-        </p>,
-        <p>
           📫 REST API interaction:{' '}
           <a
             href='https://github.com/profydev/prolog-app-bellhwi/blob/main/api/issues.ts'
-            target='_blank'
-            rel='noreferrer'
-            style={{ color: '#3366CC' }}
-          >
-            Example code
-          </a>
-        </p>,
-        <p>
-          📋 Issue list table:{' '}
-          <a
-            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/issues/components/issue-list/issue-list.tsx#L89-L184'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -91,9 +69,9 @@ const data = [
           </a>
         </p>,
         <p>
-          📱 Ui kit:{' '}
+          📄 Project list:{' '}
           <a
-            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/ui/button/button.stories.tsx'
+            href='https://github.com/profydev/prolog-app-bellhwi/blob/main/features/projects/components/project-list/project-list.tsx#L70-L111'
             target='_blank'
             rel='noreferrer'
             style={{ color: '#3366CC' }}
@@ -101,6 +79,10 @@ const data = [
             Example code
           </a>
         </p>,
+
+        <p>📋 Issue list table</p>,
+
+        <p>📱 Ui kit</p>,
       ],
       techs: [
         techURLs.typescript,
@@ -115,7 +97,7 @@ const data = [
         techURLs.prettier,
       ],
       github: 'https://github.com/profydev/prolog-app-bellhwi',
-      website: 'https://prolog-react.vercel.app/dashboard',
+      website: 'https://prolog-react.vercel.app',
     },
   },
   {
@@ -185,15 +167,7 @@ const data = [
         <p>✨ Live inventory</p>,
         <p>📱 Responsive design</p>,
       ],
-      techs: [
-        techURLs.html,
-        techURLs.css,
-        techURLs.javascript,
-        techURLs.sass,
-        techURLs.react,
-        techURLs.redux,
-        techURLs.firebase,
-      ],
+      techs: [techURLs.react, techURLs.redux, techURLs.firebase, techURLs.sass],
       github: 'https://github.com/bellhwi/haxa',
       website: 'https://haxalabs.com/',
     },
