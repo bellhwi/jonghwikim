@@ -96,7 +96,7 @@ function Project() {
         </div>
 
         <h4 className='modal-content-heading font-semibold mt-6'>
-          Technical Decision
+          TECHNICAL DECISION
         </h4>
         <hr className='mt-1' />
         <ul className='list-disc text-gray-700 text-xs sm:text-sm pl-4'>
