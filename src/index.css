@@ -24,22 +24,14 @@ body {
 }
 
 .code-block {
+  font-family: "Courier New", Courier, monospace;
   background-color: #d3d3d3;
   padding: 1px 2px;
   border-radius: 2px;
+  font-weight: 600;
 }
 
 /* Badge Color */
-.STORYBOOK {
-  border: 1px solid #e87d27;
-  color: #e87d27;
-}
-
-.CSS {
-  border: 1px solid #006d77;
-  color: #006d77;
-}
-
 .SASS {
   border: 1px solid #c46192;
   color: #c46192;
@@ -48,21 +40,6 @@ body {
 .REACT {
   border: 1px solid #0077b6;
   color: #0077b6;
-}
-
-.MONGODB {
-  border: 1px solid #4ca33e;
-  color: #4ca33e;
-}
-
-.EXPRESS {
-  border: 1px solid #000;
-  color: #000;
-}
-
-.NODEJS {
-  border: 1px solid #c9a227;
-  color: #c9a227;
 }
 
 .CYPRESS {
@@ -95,7 +72,23 @@ body {
   color: #023e8a;
 }
 
+/* Old Badges
 .TAILWIND {
-  border: 1px solid #5bc0be;
-  color: #5bc0be;
-}/*# sourceMappingURL=index.css.map */
+  @include badgeColor(#5bc0be);
+}
+.STORYBOOK {
+  @include badgeColor((#e87d27));
+}
+.CSS {
+  @include badgeColor(#006d77);
+}
+.MONGODB {
+  @include badgeColor(#4ca33e);
+}
+.EXPRESS {
+  @include badgeColor(#000);
+}
+.NODEJS {
+  @include badgeColor(#c9a227);
+}
+*//*# sourceMappingURL=index.css.map */

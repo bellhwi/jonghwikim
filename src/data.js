@@ -15,7 +15,7 @@ const data = [
     url: getURLs('prolog'),
     title: 'ProLog',
     id: 'prolog',
-    badges: ['TYPESCRIPT', 'NEXTJS', 'REACT', 'CYPRESS', 'STORYBOOK'],
+    badges: ['TYPESCRIPT', 'NEXTJS', 'REACT', 'CYPRESS'],
     contents: {
       heading: (
         <p>
@@ -92,7 +92,6 @@ const data = [
         techURLs.styledcomponents,
         techURLs.cypress,
         techURLs.jest,
-        techURLs.storybook,
         techURLs.eslint,
         techURLs.prettier,
       ],
@@ -107,7 +106,7 @@ const data = [
     badges: ['REACT', 'REDUX', 'FIREBASE', 'SASS'],
     contents: {
       heading:
-        'Freelance e-commerce project built with React for my entrepreneur client.',
+        'Freelance work: members-only eCommerce web app for an entrepreneur client built with React.',
       desc: (
         <div className='ml-2'>
           {overviews['haxa'].map((desc, index) => {
@@ -123,10 +122,7 @@ const data = [
         </div>
       ),
       alert: (
-        <p className='font-semibold'>
-          Admin page is accessible by clicking the copyright text at footer!
-          (admin@example.com / 123456)
-        </p>
+        <p className='font-semibold'>Test account: test@example.com / 123456</p>
       ),
       features: [
         <p>
@@ -176,7 +172,7 @@ const data = [
     url: getURLs('devlog'),
     title: 'Devlog',
     id: 'devlog',
-    badges: ['TYPESCRIPT', 'NEXTJS', 'REACT', 'REDUX', 'TAILWIND'],
+    badges: ['TYPESCRIPT', 'NEXTJS', 'REACT', 'REDUX'],
     contents: {
       heading: 'Blog website built with NextJS & TypeScript.',
       desc: (
@@ -235,7 +231,6 @@ const data = [
         techURLs.typescript,
         techURLs.react,
         techURLs.redux,
-        techURLs.tailwind,
       ],
       github: 'https://github.com/bellhwi/devlog',
       website: 'https://devlog-next.vercel.app/',
