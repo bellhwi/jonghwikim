@@ -12,6 +12,75 @@ const getURLs = (fileName) => {
 
 const data = [
   {
+    url: getURLs('haxa'),
+    title: 'Haxa',
+    id: 'haxa',
+    badges: ['REACT', 'REDUX', 'FIREBASE', 'SASS'],
+    contents: {
+      heading:
+        'Freelance work: members-only eCommerce web app for an entrepreneur client built with React.',
+      desc: (
+        <div className='ml-2'>
+          {overviews['haxa'].map((desc, index) => {
+            return <div key={index}>{desc}</div>
+          })}
+        </div>
+      ),
+      technicalDecision: (
+        <div className='ml-2'>
+          {technicalDecision['haxa'].map((desc, index) => {
+            return <div key={index}>{desc}</div>
+          })}
+        </div>
+      ),
+      alert: (
+        <p className='font-semibold'>Test account: test@example.com / 123456</p>
+      ),
+      features: [
+        <p>
+          🧑🏻‍💼 Admin product management:{' '}
+          <a
+            href='https://github.com/bellhwi/haxa/blob/main/src/pages/Edit.jsx#L86-L139'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+        <p>
+          🧑🏻‍💻 User authentication:{' '}
+          <a
+            href='https://github.com/bellhwi/haxa/blob/main/src/pages/Login.jsx#L61-L86'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+        <p>
+          🎯 Filter / sort product:{' '}
+          <a
+            href='https://github.com/bellhwi/haxa/blob/main/src/components/Products.jsx#L25-L73'
+            target='_blank'
+            rel='noreferrer'
+            style={{ color: '#3366CC' }}
+          >
+            Example code
+          </a>
+        </p>,
+        <p>💳 PayPal integration</p>,
+        <p>🔍 Search product</p>,
+        <p>✨ Live inventory</p>,
+        <p>📱 Responsive design</p>,
+      ],
+      techs: [techURLs.react, techURLs.redux, techURLs.firebase, techURLs.sass],
+      github: 'https://github.com/bellhwi/haxa',
+      website: 'https://haxalabs.com/',
+    },
+  },
+  {
     url: getURLs('prolog'),
     title: 'ProLog',
     id: 'prolog',
@@ -97,75 +166,6 @@ const data = [
       ],
       github: 'https://github.com/profydev/prolog-app-bellhwi',
       website: 'https://prolog-react.vercel.app',
-    },
-  },
-  {
-    url: getURLs('haxa'),
-    title: 'Haxa',
-    id: 'haxa',
-    badges: ['REACT', 'REDUX', 'FIREBASE', 'SASS'],
-    contents: {
-      heading:
-        'Freelance work: members-only eCommerce web app for an entrepreneur client built with React.',
-      desc: (
-        <div className='ml-2'>
-          {overviews['haxa'].map((desc, index) => {
-            return <div key={index}>{desc}</div>
-          })}
-        </div>
-      ),
-      technicalDecision: (
-        <div className='ml-2'>
-          {technicalDecision['haxa'].map((desc, index) => {
-            return <div key={index}>{desc}</div>
-          })}
-        </div>
-      ),
-      alert: (
-        <p className='font-semibold'>Test account: test@example.com / 123456</p>
-      ),
-      features: [
-        <p>
-          🧑🏻‍💼 Admin product management:{' '}
-          <a
-            href='https://github.com/bellhwi/haxa/blob/main/src/pages/Edit.jsx#L86-L139'
-            target='_blank'
-            rel='noreferrer'
-            style={{ color: '#3366CC' }}
-          >
-            Example code
-          </a>
-        </p>,
-        <p>
-          🧑🏻‍💻 User authentication:{' '}
-          <a
-            href='https://github.com/bellhwi/haxa/blob/main/src/pages/Login.jsx#L61-L86'
-            target='_blank'
-            rel='noreferrer'
-            style={{ color: '#3366CC' }}
-          >
-            Example code
-          </a>
-        </p>,
-        <p>
-          🎯 Filter / sort product:{' '}
-          <a
-            href='https://github.com/bellhwi/haxa/blob/main/src/components/Products.jsx#L25-L73'
-            target='_blank'
-            rel='noreferrer'
-            style={{ color: '#3366CC' }}
-          >
-            Example code
-          </a>
-        </p>,
-        <p>💳 PayPal integration</p>,
-        <p>🔍 Search product</p>,
-        <p>✨ Live inventory</p>,
-        <p>📱 Responsive design</p>,
-      ],
-      techs: [techURLs.react, techURLs.redux, techURLs.firebase, techURLs.sass],
-      github: 'https://github.com/bellhwi/haxa',
-      website: 'https://haxalabs.com/',
     },
   },
   {

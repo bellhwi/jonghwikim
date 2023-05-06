@@ -1,4 +1,74 @@
 const overviews = {
+  haxa: [
+    <>
+      <h4 className='font-semibold'>How did I build it?</h4>
+      <p className='ml-2 mt-0.5'>
+        Haxa is the eCommerce project for my entrepreneur client. I closely
+        communicated with my client to meet his visual and functional
+        requirements. After discussion, I designed and developed an entire
+        website and deployed it.
+      </p>
+      <h4 className='font-semibold mt-3'>
+        What was the most challenging part?
+      </h4>
+      <p className='ml-2 mt-0.5'>
+        I used Firebase database and storage for this project. I had to write
+        code logics to fetch the products data. That code logic was being called
+        every time I opened the products page. I found out that this number of
+        fetching data causes quite a bit of loading delay. I had to solve this
+        problem to make my website run faster.{' '}
+        <a
+          href='https://docs.google.com/document/d/1cCmYlvT7zN1VVJ4X7mH-5sxntNe4PvYZ5K1fgKZWyMg/edit'
+          style={{ color: '#3366CC' }}
+          target='_blank'
+          rel='noreferrer'
+        >
+          See more on Google Docs.
+        </a>
+      </p>
+      <h4 className='font-semibold mt-3'>How did I solve it?</h4>
+      <p className='ml-2 mt-0.5'>
+        I used Redux and the <span className='code-block'>useEffect</span> hook
+        in React to optimize data fetching logic. It stores data in a state
+        after the component is rendered initially. I set the last product update
+        time as a dependency to fetch data only when there is a change made. In
+        this way, I could improve the performance of my website.
+      </p>
+      <h4 className='font-semibold mt-3'>What was the most fun part?</h4>
+      <p className='ml-2 mt-0.5'>
+        The most fun part was creating an admin page. It was my very first time
+        implementing this feature with Firebase. I had to read the official
+        document on Google Firebase to come up with code logics. I was surprised
+        to see how the Firebase handles the data and makes it easy to apply
+        backend to my web app. I enjoyed learning this new technology.
+      </p>
+      <h4 className='font-semibold mt-3'>What did I learn?</h4>
+      <p className='ml-2 mt-0.5'>
+        I learned how to build a full stack web app with the Firebase. It was
+        significant achievement for me since it was my first website that is
+        connected to the database. I learned how to integrate a PayPal payment
+        with my app, as well. It was way more simple that I thought. It taught
+        me that I shouldn't assume implementing new feature in the project is
+        complicated. I learned that I should always be opened to face a new
+        challenge and go over my comfort zone.
+      </p>
+      <h4 className='font-semibold mt-3'>
+        What will I do differently next time?
+      </h4>
+      <p className='ml-2 mt-0.5'>
+        I want to create a wireframe before starting to develop the website next
+        time. At the early stage of the project, I didn't want to spend too much
+        time coming up with design. I dived into the project with a very simple
+        and vague design decision. I had no detailed visual blueprint of the
+        completed project at all. It caused a lot of debating in terms of design
+        during the development process. I had to spend way more time than I
+        expected for this part. I overlooked the decision making of website
+        design could be very time consuming overall the project. I'll definitely
+        use design tools to create a detailed wireframe of the project next
+        time.
+      </p>
+    </>,
+  ],
   prolog: [
     <>
       <h4 className='font-semibold'>How did I build it?</h4>
@@ -76,76 +146,6 @@ const overviews = {
         this program while I was working on the large professional codebase.
         With the skills I gained from this program, I'm ready to build a complex
         app that is a real world-like project.
-      </p>
-    </>,
-  ],
-  haxa: [
-    <>
-      <h4 className='font-semibold'>How did I build it?</h4>
-      <p className='ml-2 mt-0.5'>
-        Haxa is the eCommerce project for my entrepreneur client. I closely
-        communicated with my client to meet his visual and functional
-        requirements. After discussion, I designed and developed an entire
-        website and deployed it.
-      </p>
-      <h4 className='font-semibold mt-3'>
-        What was the most challenging part?
-      </h4>
-      <p className='ml-2 mt-0.5'>
-        I used Firebase database and storage for this project. I had to write
-        code logics to fetch the products data. That code logic was being called
-        every time I opened the products page. I found out that this number of
-        fetching data causes quite a bit of loading delay. I had to solve this
-        problem to make my website run faster.{' '}
-        <a
-          href='https://docs.google.com/document/d/1cCmYlvT7zN1VVJ4X7mH-5sxntNe4PvYZ5K1fgKZWyMg/edit'
-          style={{ color: '#3366CC' }}
-          target='_blank'
-          rel='noreferrer'
-        >
-          See more on Google Docs.
-        </a>
-      </p>
-      <h4 className='font-semibold mt-3'>How did I solve it?</h4>
-      <p className='ml-2 mt-0.5'>
-        I used Redux and the <span className='code-block'>useEffect</span> hook
-        in React to optimize data fetching logic. It stores data in a state
-        after the component is rendered initially. I set the last product update
-        time as a dependency to fetch data only when there is a change made. In
-        this way, I could improve the performance of my website.
-      </p>
-      <h4 className='font-semibold mt-3'>What was the most fun part?</h4>
-      <p className='ml-2 mt-0.5'>
-        The most fun part was creating an admin page. It was my very first time
-        implementing this feature with Firebase. I had to read the official
-        document on Google Firebase to come up with code logics. I was surprised
-        to see how the Firebase handles the data and makes it easy to apply
-        backend to my web app. I enjoyed learning this new technology.
-      </p>
-      <h4 className='font-semibold mt-3'>What did I learn?</h4>
-      <p className='ml-2 mt-0.5'>
-        I learned how to build a full stack web app with the Firebase. It was
-        significant achievement for me since it was my first website that is
-        connected to the database. I learned how to integrate a PayPal payment
-        with my app, as well. It was way more simple that I thought. It taught
-        me that I shouldn't assume implementing new feature in the project is
-        complicated. I learned that I should always be opened to face a new
-        challenge and go over my comfort zone.
-      </p>
-      <h4 className='font-semibold mt-3'>
-        What will I do differently next time?
-      </h4>
-      <p className='ml-2 mt-0.5'>
-        I want to create a wireframe before starting to develop the website next
-        time. At the early stage of the project, I didn't want to spend too much
-        time coming up with design. I dived into the project with a very simple
-        and vague design decision. I had no detailed visual blueprint of the
-        completed project at all. It caused a lot of debating in terms of design
-        during the development process. I had to spend way more time than I
-        expected for this part. I overlooked the decision making of website
-        design could be very time consuming overall the project. I'll definitely
-        use design tools to create a detailed wireframe of the project next
-        time.
       </p>
     </>,
   ],

@@ -1,4 +1,23 @@
 const technicalDecision = {
+  haxa: [
+    <>
+      <li className='mt-2'>
+        I used ReactJS on purpose for one of the features in the project. My
+        client required a filter that showed the products without page
+        reloading.
+      </li>
+      <li className='mt-2'>
+        I used Redux to optimize the data fetching logic. It lets me manage
+        global states in an easier and more intuitive way as well.
+      </li>
+      <li className='mt-2'>
+        My goal is to become a full-stack developer ultimately. However I want
+        to focus on the frontend for now. That's why I decided to use Firebase
+        rather than create a custom server. I have basic backend knowledge in
+        NodeJS, Express, MongoDB, and MySQL.
+      </li>
+    </>,
+  ],
   prolog: [
     <>
       <li className='mt-2'>
@@ -45,26 +64,6 @@ const technicalDecision = {
         >
           Example PR
         </a>
-      </li>
-    </>,
-  ],
-
-  haxa: [
-    <>
-      <li className='mt-2'>
-        I used ReactJS on purpose for one of the features in the project. My
-        client required a filter that showed the products without page
-        reloading.
-      </li>
-      <li className='mt-2'>
-        I used Redux to optimize the data fetching logic. It lets me manage
-        global states in an easier and more intuitive way as well.
-      </li>
-      <li className='mt-2'>
-        My goal is to become a full-stack developer ultimately. However I want
-        to focus on the frontend for now. That's why I decided to use Firebase
-        rather than create a custom server. I have basic backend knowledge in
-        NodeJS, Express, MongoDB, and MySQL.
       </li>
     </>,
   ],

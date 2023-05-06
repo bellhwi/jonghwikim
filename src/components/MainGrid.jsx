@@ -4,12 +4,12 @@ function MainGrid() {
   return (
     <div className='mt-10 mx-auto grid grid-cols-1 sm:grid-cols-2 items-center gap-8 w-10/12 lg:absolute lg:right-0 pb-10'>
       <Thumbnail
-        url={`${process.env.PUBLIC_URL}/images/prolog.webp`}
+        url={`${process.env.PUBLIC_URL}/images/haxa.webp`}
         index={0}
         width='90%'
       />
       <Thumbnail
-        url={`${process.env.PUBLIC_URL}/images/haxa.webp`}
+        url={`${process.env.PUBLIC_URL}/images/prolog.webp`}
         index={1}
         width='95%'
       />
