@@ -32,6 +32,18 @@ function Navbar() {
         >
           Projects
         </NavLink>
+        <a
+          href='https://docs.google.com/document/d/1cCmYlvT7zN1VVJ4X7mH-5sxntNe4PvYZ5K1fgKZWyMg/edit?usp=sharing'
+          target='_blank'
+          rel='noreferrer'
+          className={({ isActive }) =>
+            isActive
+              ? 'text-gray-400 pr-2 no-underline'
+              : 'link pr-2 no-underline'
+          }
+        >
+          Work
+        </a>
 
         <NavLink
           to='/about'

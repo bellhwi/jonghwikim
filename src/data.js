@@ -18,7 +18,7 @@ const data = [
     badges: ['REACT', 'REDUX', 'FIREBASE', 'SASS'],
     contents: {
       heading:
-        'Freelance work: members-only eCommerce web app for an entrepreneur client built with React.',
+        'Freelance work: a members-only eCommerce web app for an entrepreneur client built with React.',
       desc: (
         <div className='ml-2'>
           {overviews['haxa'].map((desc, index) => {
