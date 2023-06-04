@@ -44,32 +44,32 @@ function About() {
               🚀 I care about developing highly performant web application.
             </li>
           </ul>
-          <div class='shadow-md bg-gray-50 rounded-sm p-4 mt-5'>
-            <p class='text-xs sm:text-sm text-gray-600'>
+          <div className='shadow-md bg-gray-50 rounded-sm p-4 mt-5'>
+            <p className='text-xs sm:text-sm text-gray-600'>
               "I had the pleasure of working with Jonghwi on a web app project,
               and I am extremely satisfied with the results. Jonghwi delivered a
               seamless and intuitive user experience. I highly recommend Jonghwi
               for his expertise in developing visually stunning web apps that
               excel in both design and functionality."
             </p>
-            <p class='text-xs sm:text-sm text-gray-600 font-bold mt-4 text-right'>
+            <p className='text-xs sm:text-sm text-gray-600 font-bold mt-4 text-right'>
               -Sam E.
             </p>
           </div>
-          <div class='shadow-md bg-gray-50 rounded-sm p-4 mt-5'>
-            <p class='text-xs sm:text-sm text-gray-600'>
+          <div className='shadow-md bg-gray-50 rounded-sm p-4 mt-5'>
+            <p className='text-xs sm:text-sm text-gray-600'>
               "I hired Jonghwi to build my portfolio website for me. Because of
               him, I received a lot of compliments of how clean and easy it is
               to navigate around. He listens and understands how I wanted my
               website and proceeded to create me a beautiful, simple and clean
               website. I will definitely use his service again! "
             </p>
-            <p class='text-xs sm:text-sm text-gray-600 font-bold mt-4 text-right'>
+            <p className='text-xs sm:text-sm text-gray-600 font-bold mt-4 text-right'>
               -Annie S.
             </p>
           </div>
 
-          <div className='flex mt-12'>
+          <div className='flex mt-12 mb-8'>
             <a
               className='btn text-xs sm:text-sm rounded-none border border-black bg-transparent text-black hover:bg-transparent'
               href='https://docs.google.com/document/d/1sb04-iGHiQJpp8Cfb_CJ_IknxdDJvcF5v5schEDJLeQ/edit?usp=share_link'
