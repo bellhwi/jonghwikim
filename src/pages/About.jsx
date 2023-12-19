@@ -46,18 +46,6 @@ function About() {
           </ul>
           <div className='shadow-md bg-gray-50 rounded-sm p-4 mt-5'>
             <p className='text-xs sm:text-sm text-gray-600'>
-              "I had the pleasure of working with Jonghwi on a web app project,
-              and I am extremely satisfied with the results. Jonghwi delivered a
-              seamless and intuitive user experience. I highly recommend Jonghwi
-              for his expertise in developing visually stunning web apps that
-              excel in both design and functionality."
-            </p>
-            <p className='text-xs sm:text-sm text-gray-600 font-bold mt-4 text-right'>
-              -Sam E.
-            </p>
-          </div>
-          <div className='shadow-md bg-gray-50 rounded-sm p-4 mt-5'>
-            <p className='text-xs sm:text-sm text-gray-600'>
               "I hired Jonghwi to build my portfolio website for me. Because of
               him, I received a lot of compliments of how clean and easy it is
               to navigate around. He listens and understands how I wanted my
@@ -72,9 +60,9 @@ function About() {
           <div className='flex mt-12 mb-8'>
             <a
               className='btn text-xs sm:text-sm rounded-none border border-black bg-transparent text-black hover:bg-transparent'
-              href='https://docs.google.com/document/d/1sb04-iGHiQJpp8Cfb_CJ_IknxdDJvcF5v5schEDJLeQ/edit?usp=share_link'
+              href='https://docs.google.com/document/d/1ffykliEnCGxbXMfXGqy4Y2N2TArVCk3_iE5dlQY05L4/edit?usp=sharing'
               target='_blank'
-              rel='noreferrer'
+              rel='noreferrer noopener'
             >
               view my resume
             </a>
@@ -82,7 +70,7 @@ function About() {
               className='btn text-xs sm:text-sm rounded-none border-0 bg-black text-white hover:bg-black ml-2'
               href='mailto: johnnykim94@hotmail.com'
               target='_blank'
-              rel='noreferrer'
+              rel='noreferrer noopener'
             >
               contact me
             </a>

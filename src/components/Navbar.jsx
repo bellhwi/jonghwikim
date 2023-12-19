@@ -21,13 +21,13 @@ function Navbar() {
         </NavLink>
       </div>
       {myBody.clientWidth >= 1024 ? null : <div className='grow'></div>}
-      <ul className='lg:flex lg:flex-col lg:mt-6 text-sm leading-6'>
+      <ul className='lg:flex lg:flex-col lg:mt-6 text-sm leading-6 '>
         <NavLink
           to='/'
           className={({ isActive }) =>
             isActive
-              ? 'text-gray-400 pr-2 no-underline'
-              : 'link pr-2 no-underline'
+              ? 'w-max text-gray-400 pr-2 no-underline'
+              : 'w-max link pr-2 no-underline'
           }
         >
           Projects
@@ -36,11 +36,7 @@ function Navbar() {
           href='https://docs.google.com/document/d/1cCmYlvT7zN1VVJ4X7mH-5sxntNe4PvYZ5K1fgKZWyMg/edit?usp=sharing'
           target='_blank'
           rel='noreferrer'
-          className={({ isActive }) =>
-            isActive
-              ? 'text-gray-400 pr-2 no-underline'
-              : 'link pr-2 no-underline'
-          }
+          className='w-max link no-underline'
         >
           Work
         </a>
@@ -49,8 +45,8 @@ function Navbar() {
           to='/about'
           className={({ isActive }) =>
             isActive
-              ? 'text-gray-400 pl-2 lg:pl-0 no-underline'
-              : 'link pl-2 lg:pl-0 no-underline'
+              ? 'w-max text-gray-400 pl-2 lg:pl-0 no-underline'
+              : 'w-max link pl-2 lg:pl-0 no-underline'
           }
         >
           About
